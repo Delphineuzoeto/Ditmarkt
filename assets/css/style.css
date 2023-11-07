@@ -1,0 +1,31 @@
+@import url("components.css");
+@import url("root.css");
+@import url("base.css");
+
+ /* login & signin logo */
+.logo {
+  width: 100px;
+  height: 100px;
+  display: block; 
+  margin: 0 auto 20px;  
+}
+
+  .input-group-text {
+    background-color: transparent; /* Removes the background color */
+    color: blue; 
+
+  }
+
+.form-control {
+    border-right: none;
+    /* font-size: 2rem; */
+}
+   .d-flex {
+  padding-left: 10px;
+   }
+     
+ 
+ 
+
+
+
