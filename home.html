@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sign In</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+		integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<!-- Beginning of navbar -->
+
+<body>
+	<section>
+		<nav class="navbar navbar-expand-lg navbar-dark ">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">
+					<img class="navbar-brand" src="assets/images/head-logo.png" alt="logo">
+				</a>
+
+				<!-- Toggler section -->
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Collapse section -->
+
+				<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+
+					<!--  Search icon      -->
+					<form class="container-fluid">
+						<div class="input-group ">
+							<input style="height: 30px" type="text" class="form-control bdr-10 position-relative "
+								placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" />
+							<button class=" btn-style" type="submit">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+									viewBox="0 0 16 16">
+									<path
+										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+								</svg>
+							</button>
+						</div>
+					</form>
+
+					<!-- Nav items -->
+
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item pe-3">
+							<a href="#" class="nav-link text-center"> <img class="m-1" src="assets/images/icon-svg/heart.svg"
+									alt="heart svg">Reorder
+								My items</a>
+
+						</li>
+
+						<li class="nav-item pe-3">
+							<a href="login.html" class="nav-link text-center">
+								<img class="pe-2" src="assets/images/icon-svg/user.svg" alt="user logo">
+								Hi Kay M
+								Account
+
+						</li>
+
+						<li class=" nav-item pe-3 position-relative ">
+							<a href="#" class="nav-link text-center   "><span><img class=" " src="assets/images/icon-svg/cart.svg"
+										alt=""><span class=" badge bg-defaults translate-middle ">0</span></span>$0.00</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- End of navbar -->
+
+		<!-- subnav bar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active  pe-5" style="color: #FFC220;" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item pe-5">
+							<a class="nav-link text-white" href="#">ditmartgrocery</a>
+						</li>
+						<li class="nav-item pe-5 ">
+							<a class="nav-link text-white " href="#">ditmartwater</a>
+						</li>
+						<li class="nav-item p3-5">
+							<a class="nav-link text-white" href="#" tabindex="-1">ditmartessentials</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- end of subnavbar -->
+
+		<!-- Header Section -->
+		<main>
+			<section>
+				<div class="">
+					<div class="header-img  position-relative ">
+						<picture>
+							<!-- Source for browsers that support the WebP format -->
+							<source srcset="assets/images/home-image-slidder-1.webp" type="image/webp">
+
+							<!-- Source for browsers that do not support the WebP format -->
+							<img class="img-fluid" src="assets/images/home-image-slidder-1.png" alt="couples in a mall">
+						</picture>
+
+
+						<!-- modal -->
+
+						<div id="myModal" class="modal position-absolute">
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-body">
+										<h5 class=" modal-title  pl-30">login or register</h5>
+										<form>
+											<div>
+												<input type="text" placeholder="Enter your Email" class=" form-control form-control-lg  ">
+											</div>
+											<div class="  ">
+												<button type="submit"
+													class="btn btn-primary bg-secondary w-100-percent   font-w-400 font-14 bdr-15  my-5  ">Continue
+													with
+													email
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+
+			<!-- End of Header Section -->
+
+			<!-- Categories section -->
+
+			<section>
+				<div class="category">
+					<div class="card">
+						<h4 class="card-header">Category</h4>
+						<div class="card-body d-grid ">
+							<div id="image-gallery" class="card-text grid-7"></div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</section>
+
+			<!-- Product-Buzz section -->
+			<section>
+				<div class="product-buzz pt-4">
+					<div id="carouselExampleControls" class="carousel slide carouselSlide " data-bs-ride="carousel">
+						<div class="carousel-inner carouselInner" id="carouselInner">
+							<div class="d-flex justify-content-between p-4 product-header">
+								<h3>Don’t forget a thing
+									<p class="text-muted">Breakfast, BBQs, home, beauty & more.</p>
+								</h3>
+								<h4 class=""><a href="#">View all</a></h4>
+							</div>
+						</div>
+						<button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleControls"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon " aria-hidden="true"><img
+									src="assets//images/icon-svg/arrow-left.svg" alt=""></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true">
+								<img src="assets//images/icon-svg/arrow-right.svg" alt="">
+							</span>
+						</button>
+					</div>
+					<div class="pt-40 pillow">
+						<picture>
+							<!-- Source for browsers that support the WebP format -->
+							<source srcset=" assets/images/slider menu 1.webp" type="image/webp">
+
+							<!-- Source for browsers that do not support the WebP format -->
+							<img src="assets/images/category/Pillow.png" alt="pillow">
+						</picture>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class=" pt-30 footer ">
+
+			<div class="container footer-grid">
+				<div class="footer-img-con">
+					<img class="footer-img-1"
+						src="assets/images/category/Android Large - 1_samsung-galaxys20ultra-cosmicblack-portrait 2.png" alt="">
+					<img class="footer-img-2"
+						src="assets/images/category/Android Large - 1_samsung-galaxys20ultra-cosmicblack-portrait.png" alt="">
+				</div>
+				<div class="Ditmarkt">
+					<h4 class="pt-40">Get Ditmarkt App</h4>
+					<img class="pe-4" src="assets/images/social/App_store.svg" alt="apple store icon">
+					<img class="pe-2" src="assets/images/social/Google_play.svg" alt="google play icon">
+					<p class="pt-20 fw-bold ">Savor the taste. Experience lightning-fast doorstep delivery!</p>
+				</div>
+			</div>
+			</div>
+			<div class=" text-white bg-primary-footer position-absolute  ">
+				<div class=" nav-footer__wrapper pb-10  ">
+					<div>
+						<ul>
+							<li><a class="nav-link " href="#">All Department</a></li>
+							<li><a class="nav-link " href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><a class="nav-link " href="#">About Us</a></li>
+							<li><a class="nav-link " href="#">Terms of Use</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><a class="nav-link " href="#">Become a Franchise </a></li>
+							<li><a class="nav-link " href="#">Store Directory</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<ul>
+							<li class="nav-item "><a class="nav-link " href="#">Careers </a></li>
+							<li class="nav-item "><a class="nav-link " href="#">Sign up for Email</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="nav-item "><a class="nav-link " href="#">Become a Ditmarkt Locals Business </a></li>
+							<li class="nav-item "><a class="nav-link " href="#">Contact us</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="nav-item "><a class="nav-link " href="#">FAQ </a></li>
+							<li class="nav-item "><a class="nav-link " href="#">Help & Support</a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="nav-item "><a class="nav-link " href="#">Brand Shop Directory </a></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="nav-item "><a class="nav-link " href="#">Protection of Personal Data </a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- to add a border top line  -->
+				<div class="footer-border"></div>
+				<div class="footer-icon py-5">
+					<!-- no content.... -->
+					<div></div>
+					<div>
+						<p class="text-white">© 2023 Ditmarkt. All Rights Reserved.</p>
+					</div>
+					<div class="footer-socials">
+						<p class="d-inline pe-3 text-white ">FOLLOW</p>
+						<a class="pe-3"><img src="assets/images/social/twitter.svg" alt="twitter icon"></a>
+						<a class="pe-3"><img src="assets/images/social/fb.svg" alt="facebook icon"></a>
+						<a class="pe-3"><img src="assets/images/social/Linkedln.svg" alt="Linkedln icon"></a>
+						<a class="pe-3"><img src="assets/images/social/Youtube.svg" alt="Youtube icon"></a>
+					</div>
+				</div>
+
+		</footer>
+		<script src="main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+</body>
+
+</html>

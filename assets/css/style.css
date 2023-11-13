@@ -2,7 +2,13 @@
 @import url("root.css");
 @import url("base.css");
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
  /* login & signin logo */
+ 
 .logo {
   width: 100px;
   height: 100px;
@@ -10,22 +16,175 @@
   margin: 0 auto 20px;  
 }
 
-  .input-group-text {
-    background-color: transparent; /* Removes the background color */
-    color: blue; 
-
-  }
-
-.form-control {
-    border-right: none;
-    /* font-size: 2rem; */
-}
    .d-flex {
   padding-left: 10px;
    }
-     
+     /* navbar */
+
+.navbar{
+  background-color: #0071DC;      
+}
+
+.input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+}
+
+.btn-style {
+position: absolute;
+top: 5px;
+right: 5px; /* Adjust the right position as needed */
+outline: none;
+border: none;
+border-radius: 10px;
+background: inherit;
+font-size: 20px;
+color: #FFC220;
+cursor: pointer;
+    
+}
+ 
+   /* subnav bar */
+   
+ .bg-primary{
+  background-color: #004F9A;
+ }
+ .icon{
+  font-size: small;
+ }
+
+ .header-img{
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
+}
+
+.image-container img {
+  width: 100%;   
+}
+ .card-header{
+  background-color: transparent;
+  border: none;
+ }
+ /* modal */
+ .modal {
+      
+      top: 50%;
+      left: 15%;
+      z-index: 1;  
+    }
+
+ /* category */
+.grid-7{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+ }
+ /* products */
+ .product-buzz{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+ }
+
  
  
+.d-block{
+  font-weight: lighter;
+}
+
+/* footer */
+.footer{
+  background-color:  #E6F1FC;
+  position: sticky;
+
+}
+ .footer-grid{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  gap: 8rem;
+ }
+
+.footer-img-1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.footer-img-2 {
+  position: relative;
+  z-index: 10;
+  right: -25%; 
+  top: 0;
+}
+
+.bg-primary-footer{
+  background: #004F9A;
+}
+.nav-footer__wrapper{
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.blue-line {
+  width: 50%;
+  border: 2px solid #004F9A;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+.footer-icon{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* to add a border top line */
+.footer-border {
+  border-top: 1px solid #0071DC; /* You can adjust the color and width as needed */
+   width: 50%; 
+   margin: auto;
+   
+}
 
 
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  padding-top: 2rem;
+ 
+  
+}
 
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  color: #828DA0;
+   padding:2rem;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #004F9A;
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  margin-left: 200px; /* Set to the width of the sidebar */
+  padding: 3rem 20rem 20rem 2rem;
+ 
+}
+
+.content {
+  display: none;
+  border: 1px solid #CFD2D7;
+  padding: 2rem;
+ 
+}
+
+.content.active {
+  display: block;
+}
