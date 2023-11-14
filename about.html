@@ -109,14 +109,20 @@
 	<main>
 		<section>
 			<div class="sidebar">
-				<button onclick="showContent('about')">About</button>
-				<button onclick="showContent('Our Founders')">Our Founders</button>
-				<button onclick="showContent('contact')">Contact</button>
+				<button onclick="showContent('about')"><a class="nav-link " href="/about"
+						onclick="navigate('/about', event)">About
+						us</a></button>
+				<button onclick="showContent('Our Founders')"><a class="nav-link " href="/Founder"
+						onclick="navigate('/Founder', event)">Our
+						Founders</a></button>
+				<button onclick="showContent('contact')"><a class="nav-link " href="/Contact"
+						onclick="navigate('/about.html/contact', event)">Contact</a></button>
 			</div>
 
 			<div class="main-content">
 				<div id="about" class="content   ">
 					<h2>About us</h2>
+
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt voluptatum a quis eum distinctio ad nemo
 						possimus mollitia corrupti neque laborum assumenda voluptates ipsum id voluptas eos, dolorem obcaecati
 						officiis.</p>

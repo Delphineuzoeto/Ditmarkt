@@ -95,7 +95,7 @@ const productData = [
 		alt:"Malt",
 		title:"$17.27",
 		p: "Miller High Life Lager Beer, 30 Pack, 12 fl oz Cans, 4.6%...",
-	
+			button: "+ add"
 	},
 	
 	{
@@ -105,7 +105,7 @@ const productData = [
 		alt:"Ginger beer",
 		title:"$4.12",
 		p: "Q Ginger Beer, 7.5 oz, 4 cans gerjg34 gwf fnwef",
-		
+			button: "+ add"
 	},
 		
 	{
@@ -115,6 +115,7 @@ const productData = [
 		alt:"Heineken",
 		title:"$9.27",
 		p: "Heineken Original Lager Beer, 6 Pack, 12 fl oz Bottles",
+		button: "+ add"
 	
 	},
 ];
@@ -174,6 +175,7 @@ for (const Images of imageData) {
 					const icon = document.createElement('img');
 					const title = document.createElement("h4");
 					const p = document.createElement('p');
+					const button = document.createElement('button');
 				
 
 					// set the attributes
@@ -182,6 +184,7 @@ for (const Images of imageData) {
 					icon.src = image.iconSrc;
 					title.textContent = image.title;
 					p.textContent = image.p;
+					button.textContent = image.button;
 					
 
 					// append elements to the container
@@ -189,6 +192,7 @@ for (const Images of imageData) {
 					div.appendChild(icon).classList.add('absolute');
 				div.appendChild(title).classList.add('card-title');
 					div.appendChild(p);
+					div.appendChild(button).classList.add('btn', 'btn-sm', 'rounded-pill', 'fs-4','text-white', 'btn-primary', 'text-center')
 					prodImage.appendChild(div);
 				}
 
@@ -214,7 +218,7 @@ for (const Images of imageData) {
 
 			// Function to show or hide the modal based on screen width
   function toggleModal() {
-    var modal = document.getElementById('myModal');
+    const modal = document.getElementById('myModal');
     if (window.innerWidth >= 991) {
       modal.style.display = 'block';
     } else {
@@ -226,7 +230,7 @@ for (const Images of imageData) {
   window.addEventListener('load', toggleModal);
   window.addEventListener('resize', toggleModal);
 
-// function to toggle sidebar main content
+// function to toggle and show sidebar main content
 
 	function showContent(contentId) {
   // Hide all content
@@ -234,6 +238,7 @@ for (const Images of imageData) {
   for (let i = 0; i < contents.length; i++) {
     contents[i].classList.remove('active');
   }
+	
 
   // Show the selected content
   const selectedContent = document.getElementById(contentId);
@@ -241,3 +246,56 @@ for (const Images of imageData) {
     selectedContent.classList.add('active');
   }
 }
+
+
+function navigate(url, event){
+	event.preventDefault();
+
+	// update the url without reloading the page 
+
+	history.pushState(null, null, url);
+
+	// Fetch and update content dynqmically
+
+	fetchContent(url);
+
+}
+
+function fetchContent(url){
+	 // Perform an AJAX request or load content based on the URL
+      // Update the content of the 'content' div with the fetched data
+      // Example:
+
+			const contents = document.getElementsByClassName('content');
+  for (let i = 0; i < contents.length; i++) {
+    contents[i].classList.remove('active');
+
+		contents.innerHTML = `<h1>Loading ...</h1>`;
+		setTimeout(() => {
+			contents.innerHTML = `<h1>${getPageTitle(url)}</h1>`
+		}, 1000);
+
+}
+}
+
+function getPageTitle(url){
+	// You can implement logic to get the title based on the URL
+      // For simplicity, just returning a hardcoded value here
+
+			if(url === '/about'){
+				return 'About Page';
+
+			}else {
+				return `${getPageTitle(url)}`
+			}
+}
+
+ // Handle back/forward button clicks to update content accordingly
+
+ window.onpopstate = function (event) {
+	fetchContent(window.Location.pathname);
+
+	// Initial content loading based on the current URL	
+ }
+
+ fetchContent(window.Location.pathname);
