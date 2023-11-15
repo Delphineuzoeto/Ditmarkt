@@ -1,59 +1,64 @@
-:root{
-    --bg-primary: #004f9a;
-    --bg-secondary: #0071dc;
-    --bg-info: #17a2b8;
-    --bg-danger: #d51b16;
-    --bg-warning: #fcab32;
-    --bg-success: #329231;
-    --bg-border: #cfd2d7;
-    --bg-paypal: #f2f2f2;
-    --bg-active-menu: #ffc220;
-    --text-menu: #dbdbff;
-    --text-primary: #2e2f32;
-    --text-secondary: #777777;
-    --font-black: 'Bogle';
-    --font-bold: 'Bogle Bold';
-    --font-regular: 'Bogle Regular';
-    --font-italic: 'Bogle Italic';
+:root {
+  --bg-primary: #004f9a;
+  --bg-secondary: #0071dc;
+  --bg-info: #17a2b8;
+  --bg-danger: #d51b16;
+  --bg-warning: #fcab32;
+  --bg-success: #329231;
+  --bg-border: #cfd2d7;
+  --bg-paypal: #f2f2f2;
+  --bg-active-menu: #ffc220;
+  --text-menu: #dbdbff;
+  --text-primary: #2e2f32;
+  --text-secondary: #777777;
+  --bg-category: #d9d9d9;
+  --font-black: "Bogle";
+  --font-bold: "Bogle Bold";
+  --font-regular: "Bogle Regular";
+  --font-italic: "Bogle Italic";
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-  
+
 html {
-    scroll-behavior: smooth;
-    font-size: 10px;
+  scroll-behavior: smooth;
+  font-size: 10px;
 }
 
-@font-face{
-    font-family: 'Bogle';
-    src: url("../fonts/BOGLEBLACK.OTF") format("OpenType");
-	font-weight: 800;
-    font-size: 1.4rem;
+@font-face {
+  font-family: "Bogle";
+  src: url("../fonts/BOGLEBLACK.OTF") format("OpenType");
+  font-weight: 800;
+  font-size: 1.4rem;
 }
 
-@font-face{
-    font-family: 'Bogle Bold';
-    src: url("../fonts/BOGLEBOLD.OTF") format("OpenType");
-	font-weight: 800;
-    font-size: 1.4rem;
+@font-face {
+  font-family: "Bogle Bold";
+  src: url("../fonts/BOGLEBOLD.OTF") format("OpenType");
+  font-weight: 800;
+  font-size: 1.4rem;
 }
 
-@font-face{
-    font-family: 'Bogle Regular';
-    src: url("../fonts/BOGLEREGULAR.OTF") format("OpenType");
-	font-weight: 500;
-    font-size: 1.4rem;
+@font-face {
+  font-family: "Bogle Regular";
+  src: url("../fonts/BOGLEREGULAR.OTF") format("OpenType");
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 
-@font-face{
-    font-family: 'Bogle Italic';
-    src: url("../fonts/BOGLEBLACKITALIC.OTF") format("OpenType");
-	font-weight: 500;
-    font-size: 1.4rem;
+@font-face {
+  font-family: "Bogle Italic";
+  src: url("../fonts/BOGLEBLACKITALIC.OTF") format("OpenType");
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.sss {
+  border: 1px solid red;
 }

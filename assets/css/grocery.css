@@ -1,0 +1,159 @@
+/* remeber no need for us to @import anything again, as we include the style.css in the doc/ page as well */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparentize(var(--scrollbar-bg), 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: transparentize(var(--scrollbar-bg), 0.5);
+  box-shadow: inset 0 0 6px var(--scrollbar-shadow);
+  border-radius: 10px;
+}
+/* End Scrollbar */
+
+.right-content-page {
+  margin-left: 30rem;
+  padding-top: 2rem;
+  height: 100%;
+}
+/* .content-page h1,
+.content-page h4,
+.content-page h5 {
+  font-size: 4rem;
+} */
+
+/* .content-page h2 {
+  font-size: 3rem;
+} */
+
+/* .content-page h3 {
+  font-size: 2.2rem;
+} */
+
+/* End container and navbar */
+
+/* 
+  .sidebar 
+  Trick here, is to make the overflow-y: auto;
+  This will automatically by default allow a scroll on the y-axis
+*/
+.sidebar {
+  position: sticky;
+  width: 50%;
+  height: 100%;
+  max-width: 25rem;
+  background-color: var(--bg-white);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  overflow-y: auto;
+  transition: var(--transition-2);
+  float: left;
+}
+
+.sidebar__menu {
+  padding: 1rem;
+}
+
+.category__menu-section {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.category__menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.category__menu-section .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.category__menu-section .left .image {
+  border-radius: 50rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+
+.category__menu-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #2e2f32;
+  font-family: bogle;
+}
+
+.category__menu-section .sub-menu {
+  margin: 2rem 0 0;
+  display: none;
+}
+
+.sub-menu.open {
+  display: block;
+}
+
+.arrow-icon.rotate {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+.category__menu-section .sub-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sub-menu li {
+  margin-top: 0.5rem;
+}
+
+.sub-menu ul a {
+  text-decoration: none;
+  color: #2e2f32;
+  font-family: bogle;
+  font-weight: 400;
+}
+
+/* .sidebar .sidebar__container {
+  position: relative;
+  background-color: inherit;
+  padding: 4rem 2rem 2rem;
+  z-index: inherit;
+} */
+.sidebar.open {
+  left: 0;
+}
+.sidebar .sidebar-feather {
+  transition: inherit;
+}
+.sidebar.open > .sidebar-feather {
+  position: fixed;
+  background: var(--bg-black);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+}
+/* fixed inset-0 bg-black bg-opacity-25 opacity-100 */
+
+/* End sidebar */
+
+/* main content */
