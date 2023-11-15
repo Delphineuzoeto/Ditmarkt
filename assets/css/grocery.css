@@ -2,24 +2,136 @@
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 4px;
+  width: 0px;
+  height: 0px;
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background-color: transparentize(var(--scrollbar-bg), 0.7);
 }
 ::-webkit-scrollbar-thumb {
   background: transparentize(var(--scrollbar-bg), 0.5);
   box-shadow: inset 0 0 6px var(--scrollbar-shadow);
   border-radius: 10px;
-}
+} */
 /* End Scrollbar */
 
 .right-content-page {
   margin-left: 30rem;
-  padding-top: 2rem;
+  padding-top: 0.1rem;
   height: 100%;
 }
+
+section .flex > a {
+  flex: 1;
+  align-items: center;
+}
+
+.section-col-link {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.section-col-link:hover {
+  transform: translateY(-5px);
+}
+
+.section-col .image {
+  border: 1px solid var(--bg-primary);
+  margin: 0 auto;
+}
+
+.section-col-text {
+  font-family: bogle;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+/* essentials */
+.shop-essentials .section-col .image {
+  border: 1px solid #dbdbff;
+}
+
+/* build your cart section */
+.build-your-cart .flex {
+  align-items: flex-start;
+}
+
+.build-your-cart .section-col {
+  flex-basis: 20%;
+  position: relative;
+  height: 32.9rem;
+  padding: 2rem;
+}
+
+.build-your-cart .section-col .image {
+  border: none;
+  border-radius: 0;
+  width: 16.1rem;
+  /* height: 13.1rem; */
+}
+
+.build-your-cart .price {
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: bogle;
+  color: var(--bg-black);
+  text-align: left;
+}
+
+.build-your-cart .desc {
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: bogle;
+  color: var(--bg-black);
+  text-align: left;
+  margin-top: 0.6rem;
+}
+
+.add-btn {
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  border: 2px solid transparent;
+  background: var(--bg-primary);
+  color: var(--bg-white);
+  padding: .6rem 1.6rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+}
+
+.add-btn svg {
+    stroke-width: 2;
+    width: 1.4rem;
+}
+
+.add-btn:hover {
+    border-color: var(--bg-primary);
+    background: transparent;
+    color: var(--bg-primary);
+    transition: all 0.5s;
+}
+
+.wishlist {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  padding: 0.5rem;
+}
+
+.wishlist-icon {
+  width: 1.8rem;
+  cursor: pointer;
+}
+
 /* .content-page h1,
 .content-page h4,
 .content-page h5 {
@@ -44,6 +156,7 @@
 .sidebar {
   position: sticky;
   width: 50%;
+  max-height: 650px;
   height: 100%;
   max-width: 25rem;
   background-color: var(--bg-white);
@@ -110,9 +223,15 @@
   display: block;
 }
 
+.arrow-icon {
+  transition: all 0.5s;
+  width: 2rem;
+  stroke: #000;
+  stroke-width: 1;
+}
+
 .arrow-icon.rotate {
   transform: rotate(180deg);
-  transition: all 0.5s;
 }
 
 .category__menu-section .sub-menu ul {
