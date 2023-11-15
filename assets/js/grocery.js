@@ -130,3 +130,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// slider
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide("#splide", {
+    perPage: 4,
+    breakpoints: {
+      600: {
+        perPage: 2,
+      },
+      800: {
+        perPage: 3,
+      },
+    },
+    pagination: false,
+    arrows: true,
+  });
+
+  splide.mount();
+
+  document.getElementById("prevButton").addEventListener("click", function () {
+    splide.go("<");
+  });
+
+  document.getElementById("nextButton").addEventListener("click", function () {
+    splide.go(">");
+  });
+});
