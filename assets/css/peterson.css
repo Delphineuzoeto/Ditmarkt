@@ -30,7 +30,7 @@
   border: .2rem solid var(--bg-border) !important;
 }
 .form .form-group{
-  margin: 0 0 3rem;
+  margin: 0 0 1.5rem;
 }
 .form label{
   font-size: 1.4rem;
@@ -58,6 +58,9 @@
 }
 .form .form-check-input:checked {
   background-color: var(--text-primary);
+}
+.form .tos{
+  padding: 4rem 0 0;
 }
 /* end form */
 
