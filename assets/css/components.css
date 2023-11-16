@@ -136,172 +136,165 @@
     font-size: 1.4rem;
 }
 
-/* Containers medias */
-@media (min-width: 1200px){
-    .container {
-        position: relative;
-        /* max-width: 11.4rem; */
-    }
-}
 a {
     color: var(--dark);
 }
 
 .text-white{
-    color: var(--text-white) !important;
+    color: var(--text-white);
 }
 .text-black{
-    color: var(--text-black) !important;
+    color: var(--text-black);
 }
 .text-black-50{
-    color: var(--bg-black-50) !important;
+    color: var(--bg-black-50);
 }
 .text-black-80{
-    color: var(--bg-black-80) !important;
+    color: var(--bg-black-80);
 }
 .text-dark{
-    color: var(--dark) !important;
+    color: var(--dark);
 }
 .text-dark-80{
-    color: var(--dark-80) !important;
+    color: var(--dark-80);
 }
 .text-dark-50{
-    color: var(--dark-50) !important;
+    color: var(--dark-50);
 }
 .text-teal{
-    color: var(--teal) !important;
+    color: var(--teal);
 }
 .text-grey{
-    color: var(--grey) !important;
+    color: var(--grey);
 }
 .text-grey-50{
-    color: var(--grey-50) !important;
+    color: var(--grey-50);
 }
 .text-grey-80{
-    color: var(--grey-80) !important;
+    color: var(--grey-80);
 }
 .text-danger{
-    color: var(--text-danger) !important;
+    color: var(--text-danger);
 }
 .text-info{
-    color: var(--text-info) !important;
+    color: var(--text-info);
 }
 .text-success{
-    color: var(--text-success) !important;
+    color: var(--text-success);
 }
 .text-warning{
-    color: var(--text-warning) !important;
+    color: var(--text-warning);
 }
 .bg-white{
     color: var(--black);
-    background-color: var(--bg-white) !important;
+    background-color: var(--bg-white);
 }
 .bg-white-80{
     color: var(--black);
-    background-color: var(--bg-white-80) !important;
+    background-color: var(--bg-white-80);
 }
 .bg-white-50{
     color: var(--black);
-    background-color: var(--bg-white-50) !important;
+    background-color: var(--bg-white-50);
 }
 .bg-black{
     color: var(--black);
-    background-color: var(--bg-black) !important;
+    background-color: var(--bg-black);
 }
 .bg-black-80{
     color: var(--black);
-    background-color: var(--bg-black-80) !important;
+    background-color: var(--bg-black-80);
 }
 .bg-black-50{
     color: var(--black);
-    background-color: var(--bg-black-50) !important;
+    background-color: var(--bg-black-50);
 }
 .bg-dark{
     color: var(--black);
-    background-color: var(--bg-dark) !important;
+    background-color: var(--bg-dark);
 }
 .bg-dark-80{
     color: var(--black);
-    background-color: var(--bg-dark-80) !important;
+    background-color: var(--bg-dark-80);
 }
 .bg-dark-50{
     color: var(--black);
-    background-color: var(--bg-dark-50) !important;
+    background-color: var(--bg-dark-50);
 }
 .bg-teal{
     color: var(--black);
-    background-color: var(--bg-teal) !important;
+    background-color: var(--bg-teal);
 }
 .bg-teal-80{
     color: var(--black);
-    background-color: var(--bg-teal-80) !important;
+    background-color: var(--bg-teal-80);
 }
 .bg-teal-50{
     color: var(--black);
-    background-color: var(--bg-teal-50) !important;
+    background-color: var(--bg-teal-50);
 }
 .bg-main{
     color: var(--black);
-    background-color: var(--bg-main) !important;
+    background-color: var(--bg-main);
 }
 .bg-main-80{
     color: var(--black);
-    background-color: var(--bg-main-80) !important;
+    background-color: var(--bg-main-80);
 }
 .bg-main-50{
     color: var(--black);
-    background-color: var(--bg-main-50) !important;
+    background-color: var(--bg-main-50);
 }
 .bg-default{
     color: var(--black);
-    background-color: var(--bg-default) !important;
+    background-color: var(--bg-default);
 }
 .bg-outline-default{
     border: .1rem solid var(--grey-80);
-    background-color: var(--bg-white) !important;
+    background-color: var(--bg-white);
 }
 .bg-outline-default:hover{
     border: .1rem solid var(--bg-default);
-    background-color: var(--bg-white) !important;
+    background-color: var(--bg-white);
 }
 .bg-default-80{
     color: var(--black);
-    background-color: var(--bg-default-80) !important;
+    background-color: var(--bg-default-80);
 }
 .bg-default-50{
     color: var(--black);
-    background-color: var(--bg-default-50) !important;
+    background-color: var(--bg-default-50);
 }
 .bg-primary{
     color: var(--black);
-    background-color: var(--bg-primary) !important;
+    background-color: var(--bg-primary);
 }
 .bg-secondary{
     color: var(--black);
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--bg-secondary);
 }
 .bg-info{
     color: var(--black);
-    background-color: var(--bg-info) !important;
+    background-color: var(--bg-info);
 }
 .bg-danger{
     color: var(--black);
-    background-color: var(--bg-danger) !important;
+    background-color: var(--bg-danger);
 }
 .bg-success{
     color: var(--black);
-    background-color: var(--bg-success) !important;
+    background-color: var(--bg-success);
 }
 .bg-warning{
     color: var(--black);
-    background-color: var(--bg-warning) !important;
+    background-color: var(--bg-warning);
 }
 .btn:focus, .btn:active {
-    outline: inherit !important;
-    box-shadow: inherit !important;
+    outline: inherit;
+    box-shadow: inherit;
 }
 .btn-plain{
-    color: var(--grey) !important;
+    color: var(--grey);
     background-color: var(--bg-white);
     border-color: var(--grey);
 }
@@ -372,6 +365,17 @@ a {
     color: var(--white);
     background-color: var(--bg-teal);
     border-color: var(--bg-teal);
+}
+.btn-secondary{
+    color: var(--white);
+    background-color: var(--bg-secondary);
+}
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:disabled{
+    color: var(--white);
+    background-color: var(--bg-secondary);
+    border-color: var(--bg-secondary);
 }
 .btn-info{
     color: var(--white);
@@ -559,6 +563,12 @@ a {
 }
 .outline-none{
     outline: none !important;
+}
+.no-outline-selection{
+    outline: none !important;
+}
+.no-outline-selection::selection{
+    background-color: transparent;
 }
 .bdr-none, .border-none{
     border: none !important;
@@ -2821,6 +2831,7 @@ body.modals__show::before{
 .form {
     position: relative;
     width: 100%;
+    text-align: left;
     padding: .5rem 1rem;
 }
 .form h1,

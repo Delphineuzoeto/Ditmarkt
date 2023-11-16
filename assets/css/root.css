@@ -1,5 +1,5 @@
 :root {
-  --bg-primary: #004f9a;
+  --bg-primary: #4B64D5;
   --bg-secondary: #0071dc;
   --bg-info: #17a2b8;
   --bg-danger: #d51b16;
@@ -7,15 +7,16 @@
   --bg-success: #329231;
   --bg-border: #cfd2d7;
   --bg-paypal: #f2f2f2;
+  --bg-footer: #354894;
   --bg-active-menu: #ffc220;
   --text-menu: #dbdbff;
   --text-primary: #2e2f32;
   --text-secondary: #777777;
   --bg-category: #d9d9d9;
-  --font-black: "Bogle";
-  --font-bold: "Bogle Bold";
-  --font-regular: "Bogle Regular";
-  --font-italic: "Bogle Italic";
+  --font-bogle: "Bogle";
+  --font-bogle-bold: "Bogle Bold";
+  --font-bogle-regular: "Bogle Regular";
+  --font-bogle-italic: "Bogle Italic";
 }
 
 * {
@@ -34,7 +35,7 @@ html {
 @font-face {
   font-family: "Bogle";
   src: url("../fonts/BOGLEBLACK.OTF") format("OpenType");
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.4rem;
 }
 
@@ -57,8 +58,4 @@ html {
   src: url("../fonts/BOGLEBLACKITALIC.OTF") format("OpenType");
   font-weight: 500;
   font-size: 1.4rem;
-}
-
-.sss {
-  border: 1px solid red;
 }

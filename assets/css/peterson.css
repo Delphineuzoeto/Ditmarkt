@@ -1,0 +1,92 @@
+@import url("components.css");
+@import url("root.css");
+@import url("base.css");
+
+.section,
+.footer-section{
+  position: relative;
+}
+
+.logo__head{
+    position: relative;
+    text-align: center;
+}
+.signin{
+    width: 100%;
+    max-width: 55rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* form */
+.form{
+  position: relative;
+}
+.form input:not([type="checkbox"]),
+.form textarea,
+.form select{
+  height: 5rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--bg-border) !important;
+}
+.form .form-group{
+  margin: 0 0 3rem;
+}
+.form label{
+  font-size: 1.4rem;
+}
+.form .password_display{
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1.9rem;
+}
+.form .password-show-hide{
+  padding-right: 7rem !important;
+}
+.form .form-check-label span{
+  position: relative;
+  padding: 0 0 0 .5rem;
+  top: .8rem;
+}
+.form .form-check-input{
+  box-shadow: none;
+  border-color: var(--text-primary);
+}
+.form .form-check-input:focus {
+  border-color: var(--text-primary);
+}
+.form .form-check-input:checked {
+  background-color: var(--text-primary);
+}
+/* end form */
+
+/* footer */
+.footer {
+  padding: 5rem 5rem 2rem 5rem;
+  background-color: var(--bg-footer);
+}
+.footer .footer_left,
+.footer .footer_right,
+.footer .footer_right span,
+.footer .footer_right a {
+  color: var(--white);
+}
+.footer .footer_right {
+  display: flex;
+  align-items: center;
+}
+.footer .footer_right span {
+  text-transform: uppercase;
+  padding-right: 1rem;
+}
+.footer .footer_right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 .5rem;
+}
+.footer_right ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+/* end footer */
