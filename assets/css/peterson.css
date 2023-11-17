@@ -1,12 +1,14 @@
 @import url("components.css");
 @import url("root.css");
-@import url("base.css");
 
 .section,
 .footer-section{
   position: relative;
 }
-
+.section-padding{
+  position: relative;
+  padding: 5rem 1rem;
+}
 .logo__head{
     position: relative;
     text-align: center;
@@ -109,6 +111,7 @@
 }
 .header_user span{
   color: var(--bg-border);
+  text-transform: capitalize;
   font-size: 1.2rem;
 }
 .header_user .anchor{
@@ -145,6 +148,10 @@
 .header_user-cart span{
   color: var(--bg-white-80);
 }
+.sub-navbar{
+  background-color: var(--bg-footer);
+  padding: 2rem;
+}
 /* end navbar */
 
 /* footer */
@@ -167,12 +174,6 @@
   padding-right: 1rem;
 }
 .footer .footer_right ul {
-  list-style: none;
-  margin: 0;
   padding: 0 0 .5rem;
-}
-.footer_right ul li {
-  display: inline-block;
-  margin-right: 1rem;
 }
 /* end footer */
