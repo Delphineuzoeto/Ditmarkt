@@ -16,7 +16,7 @@
     --bg-black: #000000;
     --bg-black-80: rgb(0, 0, 0, .80);
     --bg-black-50: rgb(0, 0, 0, .50);
-    --bg-dark: #212529;
+    --bg-dark: #212729;
     --bg-dark-80: rgb(17, 17, 17, .80);
     --bg-dark-50: rgb(17, 17, 17, .50);
     --bg-teal: #024052;
@@ -2920,9 +2920,8 @@ body.modals__show::before{
     display: flex;
     justify-items: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: 400;
-    font-family: 'monospace', 'Sofia Pro';
     max-width: 66.66%;
     height: 2rem;
     color: var(--white);
@@ -2963,6 +2962,12 @@ body.modals__show::before{
 .cust_group input[read-only] {
     background: var(--grey-80) !important;
     cursor: pointer;
+}
+.float_group-no_bg input:focus + label,
+.float_group-no_bg textarea:focus + label{
+    background: var(--white);
+    color: var(--dark);
+    border-radius: 0;
 }
 .cust_group input, .cust_group select {
     padding: 1rem 2rem 1rem 5rem !important;
