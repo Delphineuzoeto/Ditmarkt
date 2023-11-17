@@ -34,4 +34,10 @@
       padding: 2rem 0 0;
       justify-content: space-evenly;
     }
+    .page-container{
+      padding: 0 0 10rem;
+    }
+    .page{
+      padding: 3rem;
+    }
 }

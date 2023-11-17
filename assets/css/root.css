@@ -82,6 +82,7 @@ h3,
 h4,
 h5 {
   font-size: 1.8rem;
+  font-family: var(--font-bogle-bold);
   margin: 2.5rem 0;
 }
 
