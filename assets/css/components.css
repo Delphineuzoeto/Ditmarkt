@@ -4095,6 +4095,12 @@ a.btn {
 .content.active {
   display: block !important;
 }
+.products-grid1{
+  grid-template-columns: 2fr !important;
+}
+.shop-now{
+    margin-top: 1rem !important;
+}
 }
 
 @media (min-width:576px) and (max-width:767px) {
@@ -4112,7 +4118,7 @@ a.btn {
     display: none;
   }
   .carouselSlide {
-    grid-template-columns: 2fr; /* Set a single column for smaller screens */
+    grid-template-columns: 2fr; 
   }
 
   .carouselInner {
@@ -4160,7 +4166,12 @@ a.btn {
   .content{
     padding-top: 10rem !important;
   }
-
+.products-grid1{
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+.shop-now{
+    margin-top: 2rem !important;
+}
   
 }
 
@@ -4176,10 +4187,17 @@ a.btn {
 
  
 }
-@media (min-width:992px) and (max-width:1199px) {
+
+@media (min-width:700px) and (max-width:1199px) {
 .grid-7{
   grid-template-columns: repeat(5, 1fr) !important;
  }
+ .products-grid1{
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+.shop-now{
+    margin-top: 3rem !important;
+}
 }
 @media (min-width:1200px) {
    

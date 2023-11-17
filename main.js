@@ -121,7 +121,6 @@ const productData = [
 ];
 
 
-// Function to create and append image elements for category section
 
 function createImages(){
 	// get the div id
@@ -166,9 +165,7 @@ for (const Images of imageData) {
 				prodImage.classList.add( 'position-relative', 'card-text', 'd-flex',);
 
 
-		  
-
-				for (const image of productData) {
+				 for (const image of productData) {
 					// create the dom elements
 					const div = document.createElement('div');
 					const img = document.createElement('img');
@@ -192,7 +189,7 @@ for (const Images of imageData) {
 					div.appendChild(icon).classList.add('absolute');
 				div.appendChild(title).classList.add('card-title');
 					div.appendChild(p);
-					div.appendChild(button).classList.add('btn', 'btn-sm', 'rounded-pill', 'fs-4','text-white', 'btn-primary', 'text-center')
+					div.appendChild(button).classList.add('btn', 'btn-sm', 'rounded-pill', 'fs-4','text-white', 'btn-primary', 'text-center', 'card-footer')
 					prodImage.appendChild(div);
 				}
 
@@ -299,3 +296,7 @@ function getPageTitle(url){
  }
 
  fetchContent(window.Location.pathname);
+
+
+
+
