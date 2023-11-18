@@ -230,19 +230,48 @@ cursor: pointer;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 } 
+    .products-grid1{
+    padding-left: 3rem;
+ }
+ .waterBottle{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+ .heart--icon{
+  position: absolute;
+    top: 0;
+    left: 85%;
+    border: red;
+    background: transparent;
+ }
+
+ 
+ /* first slide */
+.splide__arrowss {
+    background-color: inherit; 
+    color: #fff; 
+    font-size: 4px;  
+ margin-bottom: 6rem;
+    border: none;
+}
+
+.splide__arrow:hover {
+    background-color: #005792;  
+}
+
    
 
- /* product category carousel section */
+/* end of first slide */
 
-/* .splide__slide img {
-  width: 100%;
-  height: auto;
-} */
-
-
-
+ /* second slide */
+.slide__prev{
+margin-right: 2rem;
+}
  
+.slide__next{
 
- 
+ margin-left: 1rem;
+}
 
 

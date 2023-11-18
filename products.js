@@ -4,8 +4,14 @@
   new Splide( '#image-carousel', {
 		perPage    : 4,
 		breakpoints: {
-			640: {
-				perPage: 2,
+			575: {
+				perPage: 3,
+			},
+			767: {
+				perPage: 3,
+			},
+			991: {
+				perPage: 3,
 			},
 		},
   } ).mount();
@@ -16,12 +22,17 @@
   new Splide( '#gallery-carousel', {
 		perPage    : 6,
 		breakpoints: {
-			966: {
-				perPage: 4,
-			},
-			640: {
+			575: {
 				perPage: 2,
 			},
+			767: {
+				perPage: 3,
+			},
+			991: {
+				perPage: 4,
+			},
 		},
+		//  heightRatio: 0.5,
   } ).mount();
 } );
+

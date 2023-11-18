@@ -162,7 +162,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 			<div class="product-category-grid ">
 				<nav>
 					<h3>Categories</h3>
-					<div class="accordion  product-accordion" id="accordionExample">
+					<div class="accordion  " id="accordionExample">
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
 								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -483,17 +483,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill  ">+ add</button>
 					</div>
 					<!--  -->
-
 				</div>
 			</div>
+
+			<!-- pillow grid -->
 			<div class="product-category-grid-3rd">
 				<div></div>
-				<div>
+				<div class="pillow-img">
 					<img src="assets/images/category/pillow.png" alt="">
 				</div>
-				<div class="d-grid" style="grid-template-columns: repeat(2, 1fr);">
+				<div class=" waterBottle">
 					<div>
-						<img src="assets/images/Product/spray1.png" alt="Water Bottles">
+						<img src=" assets/images/Product/spray1.png" alt="Water Bottles">
 					</div>
 					<div>
 						<p class="text-muted ">Sponsored</p>
@@ -518,10 +519,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 		<!-- product category carousel section -->
 
 		<section>
-
-			<div style="display: grid; grid-template-columns: 1fr 3fr;">
+			<div style="display: grid; grid-template-columns: 1fr 3fr;  " class="position-relative prod-carousel-grid ">
 				<div></div>
-				<div id="image-carousel" class="splide" aria-label="Beautiful   Images">
+				<div id="image-carousel" class="splide__arrows splide  splide__arrows--ltr ">
+					<button class="splide__arrow splide__arrow--prev position-absolute splide__arrow__prev" type="button"
+						aria-label="Previous slide" aria-controls="splide01-track">
+						<img src="assets/images/icon-svg/arrow-left.svg" alt="">
+					</button>
 					<div class="splide__track">
 						<h2>Explore related products</h2>
 						<ul class="splide__list">
@@ -555,27 +559,34 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						</ul>
 					</div>
 				</div>
+
+				<button class="splide__arrow splide__arrow--next splide__arrow__next   " type="button" aria-label="Next slide"
+					aria-controls="splide01-track">
+					<img src="assets/images/icon-svg/arrow-right.svg" alt="">
+				</button>
+
+			</div>
 			</div>
 		</section>
 
 		<!-- Pagination Section -->
 
-		<section style="display: grid; grid-template-columns: 1fr 3fr; margin-top: 5rem;">
+		<section style="display: grid; grid-template-columns: 1fr 3fr; margin-top: 5rem;" class="pagination-section">
 			<div></div>
 			<nav aria-label="Page navigation example">
 				<ul class="pagination ">
-					<li class="page-item rounded-pill pe-4">
-						<a class="page-link border" style=":hover{display: border ;}" href="#" aria-label="Previous">
+					<li class=" rounded-pill pe-4">
+						<a class="page-link" href="#" aria-label="Previous">
 							<span aria-hidden="true">&#60;</span>
 						</a>
 					</li>
-					<li class="page-item rounded-pill pe-4"><a class=" p-10 page-link border" href="#">1</a></li>
-					<li class="page-item rounded-pill pe-4"><a class="page-link p-10 border" href="#">2</a></li>
-					<li class="page-item rounded-pill pe-4"><a class="page-link p-10 border" href="#">3</a></li>
-					<li class="page-item rounded-pill pe-4"><a class="page-link p-10 border" href="#">...</a></li>
-					<li class="page-item rounded-pill pe-4"><a class="page-link p-10 border" href="#">12</a></li>
-					<li class="page-item rounded-pill pe-4">
-						<a class="page-link border nav-link" href="#" aria-label="Next">
+					<li class=" rounded-pill pe-4"><a class=" p-10 page-link " href="#">1</a></li>
+					<li class="  rounded-pill pe-4"><a class="page-link p-10" href="#">2</a></li>
+					<li class=" rounded-pill pe-4"><a class="page-link p-10 " href="#">3</a></li>
+					<li class=" rounded-pill pe-4"><a class="page-link p-10" href="#">...</a></li>
+					<li class=" rounded-pill pe-4"><a class="page-link p-10 " href="#">12</a></li>
+					<li class=" rounded-pill pe-4">
+						<a class="page-link nav-link" href="#" aria-label="Next">
 							<span aria-hidden="true">&#62;</span>
 						</a>
 					</li>
@@ -585,7 +596,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 		<!-- Related searches -->
 		<section>
-			<div class="d-grid " style=" grid-template-columns: 1fr 3fr; ">
+			<div class="d-grid related-search " style=" grid-template-columns: 1fr 3fr; ">
 				<div></div>
 				<div>
 					<h3>Related Search</h3>
@@ -617,69 +628,104 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
 		<!-- Product you may lke section -->
+		<section class="container-fluid ">
+			<div id="gallery-carousel" class="splide " aria-label="Beautiful   Images">
 
-		<section id="gallery-carousel" class="splide" aria-label="Beautiful   Images">
-			<div>
-				<div class="splide__track">
-					<h2>Explore related products</h2>
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<img src="assets/images/Product/spray1.png" alt="">
-							<div>
-								Description 01
-							</div>
-						</li>
+				<div class="splide__arrows splide__arrows--ltr  ">
+					<button class="splide__arrow splide__arrow--prev splide__arrowss position-absolute splide__prev" type="button"
+						aria-label="Previous slide" aria-controls="splide01-track">
+						<img src="assets/images/icon-svg/arrow-left.svg" alt="">
+					</button>
+					<div class="splide__track">
+						<h2>Products You may also like</h2>
+						<ul class="splide__list">
 
-						<li class="splide__slide">
-							<img src="assets/images/Product/spray1.png" alt="">
-							<div>
-								Description 02
-							</div>
-						</li>
+							<li class=" splide__slide">
+								<div class=" position-relative  ">
+									<img src="assets/images/Product/spray1.png" alt="">
+									<div>
+										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
+										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<h4>$6.50</h4>
+										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
+										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
+									</div>
+							</li>
+							<li class=" splide__slide">
+								<div class=" position-relative  ">
+									<img src="assets/images/Product/spray1.png" alt="">
+									<div>
+										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
+										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<h4>$6.50</h4>
+										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
+										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
+									</div>
+							</li>
+							<li class=" splide__slide">
+								<div class=" position-relative  ">
+									<img src="assets/images/Product/spray1.png" alt="">
+									<div>
+										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
+										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<h4>$6.50</h4>
+										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
+										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
+									</div>
+							</li>
+							<li class=" splide__slide">
+								<div class=" position-relative  ">
+									<img src="assets/images/Product/spray1.png" alt="">
+									<div>
+										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
+										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<h4>$6.50</h4>
+										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
+										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
+									</div>
+							</li>
+							<li class=" splide__slide">
+								<div class=" position-relative  ">
+									<img src="assets/images/Product/spray1.png" alt="">
+									<div>
+										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
+										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<h4>$6.50</h4>
+										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
+										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
+									</div>
+							</li>
+							<li class=" splide__slide">
+								<div class=" position-relative  ">
+									<img src="assets/images/Product/spray1.png" alt="">
+									<div>
+										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
+										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<h4>$6.50</h4>
+										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
+										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
+									</div>
+							</li>
 
-						<li class="splide__slide">
-							<img src="assets/images/Product/spray1.png" alt="">
-							<div>
-								Description 02
-							</div>
-						</li>
-						<li class=" ">
-							<div>
-								<img src="assets/images/Product/spray1.png" alt="">
-								<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
-								<h4>$6.50</h4>
-								<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
-								<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-							</div>
-						</li>
-						<li class=" ">
-							<div>
-								<img src="assets/images/Product/spray1.png" alt="">
-								<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
-								<h4>$6.50</h4>
-								<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
-								<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-							</div>
-						</li>
-						<li class=" ">
-							<div>
-								<img src="assets/images/Product/spray1.png" alt="">
-								<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
-								<h4>$6.50</h4>
-								<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
-								<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+
+
+						</ul>
+					</div>
+
+					<button class="splide__arrow splide__arrow--next splide__next  position-absolute  splide__arrowss"
+						type="button" aria-label="Next slide" aria-controls="splide01-track">
+						<img src="assets/images/icon-svg/arrow-right.svg" alt="">
+					</button>
+
+
 		</section>
 	</main>
 
 
+
 	<!-- Footer -->
 
-	<footer class="">
+	<footer>
 		<div class="footer ">
 			<div class="text-center pb-4 ">
 				<div class="Ditmarkt">

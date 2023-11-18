@@ -4095,12 +4095,53 @@ a.btn {
 .content.active {
   display: block !important;
 }
-.products-grid1{
-  grid-template-columns: 2fr !important;
-}
+
 .shop-now{
     margin-top: 1rem !important;
 }
+ #image-carousel {
+      grid-template-columns: 1fr; 
+    }
+
+    .splide__arrow {
+      display: none;  
+    }
+
+    .splide__track {
+      margin-top: 20px; 
+    }
+
+    /* product category grid */
+ .product-accordion {
+      width: 100%; /* Make the accordion take the full width on smaller screens */
+    }
+
+    /* Adjust styles for the accordion items */
+    .accordion-item {
+      margin-bottom: 10px;
+    }
+
+    .accordion-body {
+      padding: 10px;
+    }
+
+    .form-check-label {
+      font-size: 14px;  
+    }
+
+    /* Adjust styles for the product grid */
+    .product-category-grid-3rd{
+       grid-template-columns: 1fr !important;
+        
+    }
+     .pillow-img{
+        display: none;
+     }
+     .pagination-section{
+        grid-template-columns: 1fr;
+
+     }
+
 }
 
 @media (min-width:576px) and (max-width:767px) {
@@ -4172,7 +4213,61 @@ a.btn {
 .shop-now{
     margin-top: 2rem !important;
 }
-  
+
+#image-carousel {
+      grid-template-columns: 1fr; 
+    }
+
+    .splide__arrow {
+      display: none; /* Hide navigation arrows on smaller screens if needed */
+    }
+
+    .splide__track {
+      margin-top: 20px; 
+    }
+
+     #image-carousel {
+      grid-template-columns: 1fr; 
+    }
+
+    .splide__arrow {
+      display: none;  
+    }
+
+    .splide__track {
+      margin-top: 20px; 
+    }
+
+    /* product category grid */
+ .product-accordion {
+      width: 100%; /* Make the accordion take the full width on smaller screens */
+    }
+
+    /* Adjust styles for the accordion items */
+    .accordion-item {
+      margin-bottom: 10px;
+    }
+
+    .accordion-body {
+      padding: 10px;
+    }
+
+    .form-check-label {
+      font-size: 14px;  
+    }
+
+    /* Adjust styles for the product grid */
+    .product-category-grid-3rd{
+       grid-template-columns: 1fr !important;
+        
+    }
+.pillow-img{
+display: none;
+ }
+
+ .related-search{
+    grid-template-columns: 1fr !important;
+ }
 }
 
 @media (min-width:768px) and (max-width:991px) {
