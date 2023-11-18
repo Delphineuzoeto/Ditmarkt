@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
+    <title>Verification</title>
     <link rel="icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
@@ -29,97 +29,55 @@
                   <img src="assets/images/logo.svg" alt="DitMarkt logo" class="w-70 h-70"/>
                 </a>
                 <h1 class="pt-70 pb-20 font-w-900 font-24">
-                  Create your DitMarkt account 
+                  Verification code
                 </h1>
+                <p>Enter the verification code, received in your Email Span/Junk Folder, to rest your password.</p>
               </div>
   
               <!-- form -->
               <form action="" class="form p-0 pt-20" autocomplete="off">
                   <div class="row">
-  
+
                     <div class="col-12">
 
-                      <!-- first_name -->
-                      <div class="form-group email-holder">
-                        <label for="FirstName">First Name</label>
-                        <input type="email" class="form-control" id="FirstName" name="first_name"> 
+                      <!-- Verification Code -->
+                      <div class="float_group float_group-no_bg">
+                        <input type="number" step="any" min="1" minlength="1" maxlength="6" 
+                            class="form-control" id="vCode" 
+                            name="code" 
+                            placeholder="Verification Code"> 
+
+                        <label for="vCode">Verification Code</label>
                       </div>
 
-                      <!-- first_name -->
-                      <div class="form-group email-holder">
-                        <label for="LastName">Last Name</label>
-                        <input type="email" class="form-control" id="LastName" name="last_name"> 
-                      </div>
-  
-                      <!-- email -->
-                      <div class="form-group email-holder">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email"> 
-                      </div>
-  
                       <!-- password -->
-                      <div class="form-group">
-                        <label for="password">Create password</label>
-                        <div class="relative">
-                          <input type="password" class="form-control password-show-hide" id="password" name="password">
-                          <span class="text-secondary password_display absolute cursor no-outline-selection font-w-600" onclick="passwordDisplay(this)">
-                            Show
-                          </span>
-                        </div>
+                      <div class="float_group float_group-no_bg">
+                        <input type="text" class="form-control" id="password" name="password" placeholder="Password"> 
+                        <label for="password">Password</label>
                       </div>
-  
-                    </div>
-  
-                    <!-- remeber me -->
-                    <div class="col-12">
-                      <div class="remeber_me text-left">
-                          <div class="relative">
-                            <label class="form-check-label cursor no-outline-selection" for="remeberMe">
-                              <input class="form-check-input w-20 h-20" type="checkbox" id="remeberMe" name="remember_me"/>
-                              <span class="text-black no-outline-selection">
-                                Keep me signed in
-                              </span>
-                            </label>
-                          </div>
 
-                          <div class="relative">
-                            <label class="form-check-label cursor no-outline-selection" for="newsletter">
-                              <input class="form-check-input w-20 h-20" type="checkbox" id="newsletter" name="send_newsletter"/>
-                              <span class="text-black no-outline-selection">
-                                Send me emails about new arrivals, hot items, daily savings, & more.
-                              </span>
-                            </label>
-                          </div>
+                      <!-- retype password -->
+                      <div class="float_group float_group-no_bg">
+                        <input type="text" class="form-control" id="password" name="retype_password" placeholder="Retype Password"> 
+                        <label for="password">Retype Password</label>
                       </div>
-                    </div>
-
-                    <!-- accept tos -->
-                    <div class="col-12">
-                      <div class="text-center tos">
-                        By clicking Create Account you acknowledge you have read and agreed to our 
-                        <a href="terms.html" class="anchor">
-                          Terms of use
-                        </a>
-                        and 
-                        <a href="privacy.html" class="anchor">
-                          Privacy policy
-                        </a>
-                      </div>
+  
                     </div>
   
-                    <!-- sign in button -->
+                    <!-- Reset password button -->
                     <div class="col-12">
-                      <button class="btn btn-primary rounded-pill h-50 mt-50 w-full" type="submit">
-                        Create account
+                      <button class="btn btn-primary rounded-pill h-50 mt-10 w-full" type="submit">
+                        Reset password
                       </button>
                     </div>
 
                     <!-- back to login -->
                     <p class="text-center pt-30">
                       <a href="signin.html" class="text-decoration-underline text-black font-13">
-                        Back to login
+                        Cancel
                       </a>
                     </p>
+
                   </div>
               </form>
   
