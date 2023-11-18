@@ -66,7 +66,7 @@ cursor: pointer;
   border: none;
  }
  /* modal */
- .modal {
+ .home-modal {
       
       top: 50%;
       left: 15%;
@@ -274,4 +274,12 @@ margin-right: 2rem;
  margin-left: 1rem;
 }
 
+/* add to cart */
+
+
+.cards-content {
+  border-radius: 10px;
+   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+ 
+}
 
