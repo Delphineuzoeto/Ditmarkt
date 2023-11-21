@@ -1,12 +1,17 @@
-@import url("components.css");
+
+@import url("component.css");
 @import url("root.css");
 @import url("base.css");
+@import url("media.css");
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+ 
  /* login & signin logo */
  
 .logo {
@@ -23,6 +28,12 @@
 
 .navbar{
   background-color: #0071DC;      
+}
+
+/* nav cart badge */
+.badge{
+  color: orangered;
+  font-size: 1rem;
 }
 
 .input:focus {
@@ -85,11 +96,7 @@ cursor: pointer;
   grid-template-columns: 2fr 1fr;
  }
 
- 
- 
-.d-block{
-  font-weight: lighter;
-}
+
 
 /* footer */
 .footer{
@@ -144,11 +151,12 @@ cursor: pointer;
    
 }
 
+/* about us sidebar */
 
 .sidebar {
   height: 100%;
   width: 200px;
-  position: fixed;
+  position: absolute;
   padding-top: 2rem;
  
   
@@ -174,7 +182,7 @@ cursor: pointer;
 .main-content {
   display: flex;
   margin-left: 200px; /* Set to the width of the sidebar */
-  padding: 3rem 20rem 20rem 2rem;
+  padding: 3rem 10rem 10rem 2rem;
  
 }
 
@@ -188,6 +196,8 @@ cursor: pointer;
 .content.active {
   display: block;
 }
+
+/* end od about.html sidebar */
 
 /* product html */
 .product-card{
@@ -282,4 +292,145 @@ margin-right: 2rem;
    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
  
 }
+.footer-border-color{
+  border-top: 1px solid #D9D9D9; 
+   width: 90%; 
+   margin: auto;
+    
+}
 
+ /* payment Form */
+ .form-container{
+  padding: 0 2rem;
+ }
+
+ .card-input {  
+  background: url('/assets/images/icon-svg/card.svg') no-repeat left;
+  background-size: contain;
+  content: "000 0000 000";
+}
+ 
+
+
+.payment-form label,
+.labels {
+  text-transform: uppercase;
+  color: btn-default;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.checkout-input {
+  outline: none;
+  border-radius: 0.5rem;
+  border: 0.1rem solid btn-outline-default;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  color: btn-default;
+}
+
+/* Hiding arrows on number inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* input:focus {
+  background: linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(180deg, hsl(249, 99%, 64%) 0%, hsl(278, 94%, 30%) 100%);
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+} */
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-cvc {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .month-year {
+        display: flex;
+    }
+
+    .month-error {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        width: 100%;
+        height: 4rem;
+    }
+
+    #month,
+    #year {
+        width: 100%;
+        height: 3rem;
+    }
+
+    #cvc {
+        width: 100%;
+        height: 3rem;
+    }
+
+/* Contact us page */
+
+
+
+
+.form{
+  position: relative;
+}
+.form input:not([type="checkbox"]),
+.form textarea,
+.form select{
+  height: 5rem;
+  border-radius: .5rem;
+  border: .2rem solid var(--bg-border) !important;
+}
+.form .form-group{
+  margin: 0 0 1.5rem;
+}
+.form label{
+  font-size: 1.4rem;
+}
+.form .password_display{
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1.9rem;
+}
+.form .password-show-hide{
+  padding-right: 7rem !important;
+}
+.form .form-check-label span{
+  position: relative;
+  padding: 0 0 0 .5rem;
+  top: .8rem;
+}
+.form .form-check-input{
+  box-shadow: none;
+  border-color: var(--text-primary);
+}
+.form .form-check-input:focus {
+  border-color: var(--text-primary);
+}
+.form .form-check-input:checked {
+  background-color: var(--text-primary);
+}
+.form .tos{
+  padding: 4rem 0 0;
+}
+/* end form */

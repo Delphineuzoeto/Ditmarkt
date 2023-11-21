@@ -18,6 +18,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
 
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -87,21 +88,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 	<!-- subnav bar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
 		<div class="container">
+			<!-- Navbar toggle button -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+
+			<!-- Navbar items -->
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
+					<!-- Home -->
 					<li class="nav-item">
-						<a class="nav-link active  pe-5" style="color: #FFC220;" aria-current="page" href="#">Home</a>
+						<a class="nav-link active pe-5" style="color: #FFC220;" aria-current="page" href="#">Home</a>
 					</li>
+
+					<!-- Ditmart Grocery -->
 					<li class="nav-item pe-5">
 						<a class="nav-link text-white" href="#">ditmartgrocery</a>
 					</li>
-					<li class="nav-item pe-5 ">
-						<a class="nav-link text-white " href="#">ditmartwater</a>
+
+					<!-- Ditmart Water -->
+					<li class="nav-item pe-5">
+						<a class="nav-link text-white" href="#">ditmartwater</a>
 					</li>
+
+					<!-- Ditmart Essentials -->
 					<li class="nav-item p3-5">
 						<a class="nav-link text-white" href="#" tabindex="-1">ditmartessentials</a>
 					</li>
@@ -109,6 +120,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 			</div>
 		</div>
 	</nav>
+
 
 	<main>
 		<!-- Product Category ist section  -->
@@ -121,12 +133,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 							<img src="assets/images/Product/Ellipse .png" alt="">
 							<h2>100% Pure Quality Water</h2>
 							<p>Sponsored by Pure Life</p>
-							<button class="btn shop-now rounded-pill card-footer mt-60  ">Shop now</button>
+							<button class="btn p-10 btn-outline-secondary rounded-pill   mt-60 fs-3  ">Shop now</button>
 						</div>
 
 						<div>
 							<img src="assets/images/Product/spray1.png" alt="">
-							<button class="d-block  card-footer  btn-primary p-10 rounded-pill  ">+ add</button>
+							<button class="d-block  card-footer  bg-primary p-10 rounded-pill  ">+ add</button>
 							<h4>$6.50</h4>
 							<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 							<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -134,14 +146,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 						<div>
 							<img src="assets/images/Product/waiaWater.png" alt="">
-							<button class="d-block  card-footer  btn-primary p-10 rounded-pill  ">+ add</button>
+							<button class="d-block  card-footer  bg-primary p-10 rounded-pill  ">+ add</button>
 							<h4>$3.37</h4>
 							<p>Great Value Purified Drinking Water, 16.9 fl oz Bottles, 40 Count</p>
 							<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
 						</div>
 						<div>
 							<img src="assets/images/Product/waiaWater.png" alt="">
-							<button class="d-block  card-footer  btn-primary p-10 rounded-pill  ">+ add</button>
+							<button class="d-block  card-footer  bg-primary p-10 rounded-pill  ">+ add</button>
 							<h4>$3.37</h4>
 							<p>Great Value Purified Drinking Water, 16.9 fl oz Bottles, 40 Count</p>
 							<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -161,8 +173,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 		<section class="container ">
 			<div class="product-category-grid ">
 				<nav>
+					<!-- Categories -->
 					<h3>Categories</h3>
-					<div class="accordion  " id="accordionExample">
+					<div class="accordion" id="accordionExample">
+						<!-- First Accordion Item -->
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
 								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -172,43 +186,33 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 							</h2>
 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
 								data-bs-parent="#accordionExample">
-								<div class="accordion-body align-items-center ">
-									<div class="form-check d-flex align-items-center py-2 ">
+								<div class="accordion-body align-items-center">
+									<!-- Radio Buttons and Labels -->
+									<div class="form-check d-flex align-items-center py-2">
 										<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Department">
-										<label class="form-check-label fs-4  " for="Department">
-											Department
-										</label>
+										<label class="form-check-label fs-4" for="Department">Department</label>
 									</div>
-									<div class="form-check d-flex align-items-center  py-2">
+									<div class="form-check d-flex align-items-center py-2">
 										<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Beverages">
-										<label class="form-check-label fs-4  " for="Beverages">
-											Beverages
-										</label>
+										<label class="form-check-label fs-4" for="Beverages">Beverages</label>
 									</div>
-									<div class="form-check d-flex align-items-center  py-2 ">
+									<div class="form-check d-flex align-items-center py-2">
 										<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Grab & Go.">
-										<label class="form-check-label fs-4  " for="Grab & Go.">
-											Grab & Go.
-										</label>
+										<label class="form-check-label fs-4" for="Grab & Go.">Grab & Go.</label>
 									</div>
-									<div class="form-check d-flex align-items-center  py-2 ">
+									<div class="form-check d-flex align-items-center py-2">
 										<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
 											id="flexRadioDefault1">
-										<label class="form-check-label fs-4  " for="flexRadioDefault1">
-											Grab & Go
-										</label>
+										<label class="form-check-label fs-4" for="flexRadioDefault1">Grab & Go</label>
 									</div>
-
-									<div class="form-check d-flex align-items-center  py-2">
+									<div class="form-check d-flex align-items-center py-2">
 										<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Other Brands">
-										<label class="form-check-label fs-4  " for="Other Brands">
-											Other Brands
-										</label>
+										<label class="form-check-label fs-4" for="Other Brands">Other Brands</label>
 									</div>
 								</div>
 							</div>
 
-							<!-- second -->
+							<!-- Second Accordion Item -->
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingTwo">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -218,155 +222,108 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 								</h2>
 								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
 									data-bs-parent="#accordionExample">
-									<div class="accordion-body">
-										<div class="accordion-body align-items-center ">
-
-											<div class="form-check d-flex align-items-center  py-2">
-												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price1">
-												<label class="form-check-label fs-4  " for="Price1">
-													Price1
-												</label>
-											</div>
-
-											<div class="form-check d-flex align-items-center  py-2">
-												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price2">
-												<label class="form-check-label fs-4  " for="Price2">
-													Price2
-												</label>
-											</div>
-
-											<div class="form-check d-flex align-items-center  py-2">
-												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price3">
-												<label class="form-check-label fs-4  " for="Price3">
-													Price3
-												</label>
-											</div>
-
-											<div class="form-check d-flex align-items-center py-2 ">
-												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price4">
-												<label class="form-check-label fs-4  " for="Price4">
-													Price4
-												</label>
-											</div>
-
-											<div class="form-check d-flex align-items-center  py-2 ">
-												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price5">
-												<label class="form-check-label fs-4  " for="Price5">
-													Price5
-												</label>
-											</div>
+									<div class="accordion-body align-items-center">
+										<!-- Radio Buttons and Labels -->
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price1">
+											<label class="form-check-label fs-4" for="Price1">Price1</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price2">
+											<label class="form-check-label fs-4" for="Price2">Price2</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price3">
+											<label class="form-check-label fs-4" for="Price3">Price3</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price4">
+											<label class="form-check-label fs-4" for="Price4">Price4</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Price5">
+											<label class="form-check-label fs-4" for="Price5">Price5</label>
 										</div>
 									</div>
 								</div>
-								<!-- Third -->
+							</div>
 
+							<!-- Third Accordion Item -->
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Brand
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body align-items-center">
+										<!-- Radio Buttons and Labels -->
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand1">
+											<label class="form-check-label fs-4" for="Brand1">Brand1</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand2">
+											<label class="form-check-label fs-4" for="Brand2">Brand2</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand3">
+											<label class="form-check-label fs-4" for="Brand3">Brand3</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand4">
+											<label class="form-check-label fs-4" for="Brand4">Brand4</label>
+										</div>
+										<div class="form-check d-flex align-items-center py-2">
+											<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand5">
+											<label class="form-check-label fs-4" for="Brand5">Brand5</label>
+										</div>
+									</div>
+								</div>
+
+								<!-- Fourth Accordion Item -->
 								<div class="accordion-item">
-									<h2 class="accordion-header" id="headingThree">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-											data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											Brand
+									<h2 class="accordion-header" id="headingFour">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse"
+											data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+											Availability
 										</button>
 									</h2>
-									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+									<div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
 										data-bs-parent="#accordionExample">
-										<div class="accordion-body">
-											<div class="accordion-body align-items-center ">
-
-												<div class="form-check d-flex align-items-center  py-2">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand1">
-													<label class="form-check-label fs-4  " for="Brand1">
-														Brand1
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand2">
-													<label class="form-check-label fs-4  " for="Brand2">
-														Brand2
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand3">
-													<label class="form-check-label fs-4  " for="Brand3">
-														Brand3
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand4">
-													<label class="form-check-label fs-4  " for="Brand4">
-														Brand4
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Brand5">
-													<label class="form-check-label fs-4  " for="Brand5">
-														Brand5
-													</label>
-												</div>
+										<div class="accordion-body align-items-center">
+											<!-- Radio Buttons and Labels -->
+											<div class="form-check d-flex align-items-center py-2">
+												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
+													id="Availability1">
+												<label class="form-check-label fs-4" for="Availability1">Availability1</label>
 											</div>
-										</div>
-									</div>
-									<!-- fourth -->
-
-									<div class="accordion-item">
-										<h2 class="accordion-header" id="headingFour">
-											<button class="accordion-button" type="button" data-bs-toggle="collapse"
-												data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-												Availability
-											</button>
-										</h2>
-										<div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
-											data-bs-parent="#accordionExample">
-											<div class="accordion-body align-items-center ">
-
-												<div class="form-check d-flex align-items-center  py-2 ">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
-														id="Availability1">
-													<label class="form-check-label fs-4   " for="Availability1">
-														Availability1
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
-														id="Availability2">
-													<label class="form-check-label fs-4  " for="Availability2">
-														Availability2
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
-														id="Availability3">
-													<label class="form-check-label fs-4  " for="Availability3">
-														Availability3
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
-														id="Availability4">
-													<label class="form-check-label fs-4  " for="Availability4">
-														Availability4
-													</label>
-												</div>
-
-												<div class="form-check d-flex align-items-center  py-2">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
-														id="Availability5">
-													<label class="form-check-label fs-4  " for="Availability5">
-														Availability5
-													</label>
-												</div>
-
-												<!-- fiftj -->
+											<div class="form-check d-flex align-items-center py-2">
+												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
+													id="Availability2">
+												<label class="form-check-label fs-4" for="Availability2">Availability2</label>
+											</div>
+											<div class="form-check d-flex align-items-center py-2">
+												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
+													id="Availability3">
+												<label class="form-check-label fs-4" for="Availability3">Availability3</label>
+											</div>
+											<div class="form-check d-flex align-items-center py-2">
+												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
+													id="Availability4">
+												<label class="form-check-label fs-4" for="Availability4">Availability4</label>
+											</div>
+											<div class="form-check d-flex align-items-center py-2">
+												<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault"
+													id="Availability5">
+												<label class="form-check-label fs-4" for="Availability5">Availability5</label>
 											</div>
 										</div>
 									</div>
 
+									<!-- Fifth Accordion Item -->
 									<div class="accordion-item">
 										<h2 class="accordion-header" id="headingFive">
 											<button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -376,47 +333,37 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 										</h2>
 										<div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive"
 											data-bs-parent="#accordionExample">
-											<div class="accordion-body align-items-center ">
-
-												<div class="form-check d-flex align-items-center  py-2 ">
+											<div class="accordion-body align-items-center">
+												<!-- Radio Buttons and Labels -->
+												<div class="form-check d-flex align-items-center py-2">
 													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Water1">
-													<label class="form-check-label fs-4  " for="Water1">
-														Water
-													</label>
+													<label class="form-check-label fs-4" for="Water1">Water1</label>
 												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
+												<div class="form-check d-flex align-items-center py-2">
 													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Water2">
-													<label class="form-check-label fs-4  " for="Water2">
-														Water2
-													</label>
+													<label class="form-check-label fs-4" for="Water2">Water2</label>
 												</div>
-												<div class="form-check d-flex align-items-center  py-2 ">
+												<div class="form-check d-flex align-items-center py-2">
 													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Water3">
-													<label class="form-check-label fs-4  " for="Water3">
-														Water3
-													</label>
+													<label class="form-check-label fs-4" for="Water3">Water3</label>
 												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
-													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Water4">
-													<label class="form-check-label fs-4  " for="Water4">
-														Water4
-													</label>
+												<div class="form-check d-flex align-items-center py-2">
+													<input class="form-check-input  fs-4" type="radio" name="flexRadioDefault" id="Water4">
+													<label class="form-check-label fs-4" for="Water4">Water4</label>
 												</div>
-
-												<div class="form-check d-flex align-items-center  py-2 ">
+												<div class="form-check d-flex align-items-center py-2">
 													<input class="form-check-input mr-10 fs-4" type="radio" name="flexRadioDefault" id="Water5">
-													<label class="form-check-label fs-4  " for="Water5">
-														Water5
-													</label>
+													<label class="form-check-label fs-4" for="Water5">Water5</label>
 												</div>
 											</div>
 										</div>
 									</div>
-
-									<!-- end of accordion -->
+								</div>
+							</div>
+						</div>
+					</div>
 				</nav>
+
 
 				<!-- product-category-grid-2nd -->
 				<div class="products-grid1 pt-100 py-5 g-3">
@@ -425,7 +372,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<img src="assets/images/Product/Ellipse .png" alt="">
 						<h2>100% Pure Quality Water</h2>
 						<p>Sponsored by Pure Life</p>
-						<button class="btn shop-now rounded-pill card-footer mt-60 ">Shop now</button>
+						<button class="btn shop-now rounded-pill fs-3 p-10 mt-60 ">Shop now</button>
 					</div>
 
 					<div class="pb-10">
@@ -433,7 +380,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<h4>$6.50</h4>
 						<p class="pe-3">CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 						<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill  ">+ add</button>
+						<button class="d-block  card-footer  bg-primary  p-10 my-3 rounded-pill  ">+ add</button>
 					</div>
 
 					<div class="pb-10">
@@ -441,7 +388,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<h4>$3.37</h4>
 						<p class="pe-3">Great Value Purified Drinking Water, 16.9 fl oz Bottles, 40 Count</p>
 						<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill  ">+ add</button>
+						<button class="d-block  card-footer  bg-primary  p-10 my-3 rounded-pill  ">+ add</button>
 					</div>
 
 					<div class="pb-10">
@@ -449,14 +396,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<h4>$3.37</h4>
 						<p class="pe-3">Great Value Purified Drinking Water, 16.9 fl oz Bottles, 40 Count</p>
 						<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill  ">+ add</button>
+						<button class="d-block  card-footer  bg-primary  p-10 my-3 rounded-pill  ">+ add</button>
 					</div>
 
 					<div>
 						<img src="assets/images/Product/Ellipse .png" alt="">
 						<h2>100% Pure Quality Water</h2>
 						<p>Sponsored by Pure Life</p>
-						<button class="btn shop-now rounded-pill card-footer mt-60 ">Shop now</button>
+						<button class="btn shop-now rounded-pill p-10 fs-3 mt-60 ">Shop now</button>
 					</div>
 
 					<div>
@@ -464,7 +411,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<h4>$6.50</h4>
 						<p class="pe-3">CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 						<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill   ">+ add</button>
+						<button class="d-block  card-footer  bg-primary  p-10 my-3 rounded-pill   ">+ add</button>
 					</div>
 
 					<div>
@@ -472,7 +419,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<h4>$3.37</h4>
 						<p class="pe-3">Great Value Purified Drinking Water, 16.9 fl oz Bottles, 40 Count</p>
 						<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill  ">+ add</button>
+						<button class="d-block  card-footer  bg-primary p-10 my-3 rounded-pill  ">+ add</button>
 					</div>
 
 					<div>
@@ -480,7 +427,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						<h4>$3.37</h4>
 						<p class="pe-3 ">Great Value Purified Drinking Water, 16.9 fl oz Bottles, 40 Count</p>
 						<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
-						<button class="d-block  card-footer  btn-primary p-10 my-3 rounded-pill  ">+ add</button>
+						<button class="d-block  card-footer  bg-primary p-10 my-3 rounded-pill  ">+ add</button>
 					</div>
 					<!--  -->
 				</div>
@@ -645,7 +592,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 									<img src="assets/images/Product/spray1.png" alt="">
 									<div>
 										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
-										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<button class="d-block    bg-primary  p-10 rounded-pill  ">+ add</button>
 										<h4>$6.50</h4>
 										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -656,7 +603,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 									<img src="assets/images/Product/spray1.png" alt="">
 									<div>
 										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
-										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<button class="d-block    bg-primary p-10 rounded-pill  ">+ add</button>
 										<h4>$6.50</h4>
 										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -667,7 +614,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 									<img src="assets/images/Product/spray1.png" alt="">
 									<div>
 										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
-										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<button class="d-block   bg-primary p-10 rounded-pill  ">+ add</button>
 										<h4>$6.50</h4>
 										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -678,7 +625,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 									<img src="assets/images/Product/spray1.png" alt="">
 									<div>
 										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
-										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<button class="d-block    bg-primary p-10 rounded-pill  ">+ add</button>
 										<h4>$6.50</h4>
 										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -689,7 +636,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 									<img src="assets/images/Product/spray1.png" alt="">
 									<div>
 										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
-										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<button class="d-block    bg-primary p-10 rounded-pill  ">+ add</button>
 										<h4>$6.50</h4>
 										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
@@ -700,14 +647,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 									<img src="assets/images/Product/spray1.png" alt="">
 									<div>
 										<img class=" heart--icon " src="assets/images/icon-svg/heart_like_love_line.svg" alt="">
-										<button class="d-block    btn-primary p-10 rounded-pill  ">+ add</button>
+										<button class="d-block   bg-primary p-10 rounded-pill  ">+ add</button>
 										<h4>$6.50</h4>
 										<p>CORE Hydration Nutrient Enhanced Drinking Water, 0.5 L bottles, 6 Count</p>
 										<article><img src="assets/images/icon/ratingstar.png" alt=""></article>
 									</div>
 							</li>
-
-
 
 						</ul>
 					</div>
@@ -716,7 +661,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 						type="button" aria-label="Next slide" aria-controls="splide01-track">
 						<img src="assets/images/icon-svg/arrow-right.svg" alt="">
 					</button>
-
 
 		</section>
 	</main>

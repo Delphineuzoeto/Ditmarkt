@@ -188,8 +188,8 @@ for (const Images of imageData) {
 					div.appendChild(img);
 					div.appendChild(icon).classList.add('absolute');
 				div.appendChild(title).classList.add('card-title');
-					div.appendChild(p);
-					div.appendChild(button).classList.add('btn', 'btn-sm', 'rounded-pill', 'fs-4','text-white', 'btn-primary', 'text-center', 'card-footer')
+					div.appendChild(p).classList.add('p-10');
+					div.appendChild(button).classList.add('btn', 'btn-sm', 'rounded-pill', 'fs-4','text-white', 'bg-primary', 'text-center', 'card-footer')
 					prodImage.appendChild(div);
 				}
 

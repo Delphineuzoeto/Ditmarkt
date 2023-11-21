@@ -18,6 +18,8 @@
 } );
 
 
+
+
  document.addEventListener( 'DOMContentLoaded', function () {
   new Splide( '#gallery-carousel', {
 		perPage    : 6,
@@ -36,3 +38,7 @@
   } ).mount();
 } );
 
+ const currentDate = new Date();
+
+        // Display the current date in the HTML element with id="currentDate"
+        document.getElementById('current-date').innerHTML = '1. Free Shipping, Arrives today ' + currentDate.toLocaleDateString();

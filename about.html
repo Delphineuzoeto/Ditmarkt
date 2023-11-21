@@ -14,6 +14,7 @@
 		integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -109,17 +110,18 @@
 	<main>
 		<section>
 			<div class="sidebar">
-				<button onclick="showContent('about')"><a class="nav-link " href="/about"
-						onclick="navigate('/about', event)">About
+				<button onclick="showContent('about')"><a class="nav-link " href="about.html"
+						onclick="navigate('about.html', event)">About
 						us</a></button>
-				<button onclick="showContent('Our Founders')"><a class="nav-link " href="/Founder"
-						onclick="navigate('/Founder', event)">Our
+				<button onclick="showContent('Our Founders')"><a class="nav-link " href="founders.html"
+						onclick="navigate('founders.html', event)">Our
 						Founders</a></button>
-				<button onclick="showContent('contact')"><a class="nav-link " href="/Contact"
-						onclick="navigate('/about.html/contact', event)">Contact</a></button>
+				<button onclick="showContent('contact')"><a class="nav-link " href="contact.html"
+						onclick="navigate('contact.html', event)">Contact</a></button>
 			</div>
 
 			<div class="main-content">
+				<!-- About -->
 				<div id="about" class="content   ">
 					<h2>About us</h2>
 
@@ -135,13 +137,48 @@
 
 				</div>
 
+				<!-- Founders -->
 				<div id="ourFounders" class="content">
 					<h2>About Page</h2>
 					<p>This is the about page content.</p>
 				</div>
-				<div id="contact" class="content">
-					<h2>Contact Page</h2>
-					<p>This is the contact page content.</p>
+
+				<!-- contact us page -->
+				<div class="container custom-container content" id="contact">
+					<h1 class="text-center">Contact us</h1>
+					<div>
+						<form action="" class="custom-form p-0 pt-4 pt-md-5" autocomplete="off">
+							<div class="row">
+
+								<div class="col-md-8 mx-auto">
+
+									<!-- Full Name -->
+									<div class="form-group py-3">
+										<label for="fullName">Full Name</label>
+										<input type="text" class="form-control" id="fullName" name="full_name" placeholder="Full Name">
+									</div>
+
+									<!-- Email -->
+									<div class="form-group pb-3">
+										<label for="email" class="custom-label">Email address</label>
+										<input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+
+										<!-- Message -->
+										<div class="form-group py-3">
+											<label for="message" class="custom-label">Message</label>
+											<textarea class="form-control no-resize" id="message" name="message" rows="5"
+												placeholder="Message"></textarea>
+										</div>
+
+										<!-- Send Message Button -->
+										<button class="btn bg-primary  btn-block rounded-pill" type="submit">
+											Send Message
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -150,24 +187,18 @@
 
 	<!-- Footer -->
 
-	<footer class="footer">
-		<div class=" ">
-			<div class="container footer-grid">
-				<div class="footer-img-con">
-					<img class="footer-img-1"
-						src="assets/images/category/Android Large - 1_samsung-galaxys20ultra-cosmicblack-portrait 2.png" alt="">
-					<img class="footer-img-2"
-						src="assets/images/category/Android Large - 1_samsung-galaxys20ultra-cosmicblack-portrait.png" alt="">
-				</div>
+	<footer>
+		<div class="footer ">
+			<div class="text-center pb-4 ">
 				<div class="Ditmarkt">
-					<h4 class="pt-40">Get Ditmarkt App</h4>
+					<h4 class="pt-40  ">Get Ditmarkt App</h4>
 					<img class="pe-4" src="assets/images/social/App_store.svg" alt="apple store icon">
 					<img class="pe-2" src="assets/images/social/Google_play.svg" alt="google play icon">
 					<p class="pt-20 fw-bold ">Savor the taste. Experience lightning-fast doorstep delivery!</p>
 				</div>
 			</div>
 		</div>
-		<div class=" text-white bg-primary-footer position-absolute  ">
+		<div class=" text-white bg-primary-footer">
 			<div class=" nav-footer__wrapper pb-10  ">
 				<div>
 					<ul>
