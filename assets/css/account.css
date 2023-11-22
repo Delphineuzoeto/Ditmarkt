@@ -16,3 +16,40 @@
   padding: 1.5rem 0;
   color: var(--black);
 }
+
+/* page */
+
+.page {
+  font-family: var(--font-bogle-regular);
+}
+
+.page .page-modal {
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.page-modal .modal-header {
+  background: var(--bg-category);
+  padding: 0 1.5rem;
+}
+
+.page-modal h3 {
+  font-size: 1.7rem;
+  font-family: var(--font-bogle-bold);
+}
+
+.page-modal .left-content img {
+  margin-right: 1rem;
+}
+
+.page-modal .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-modal .modal-content {
+  padding: 1.5rem;
+}
