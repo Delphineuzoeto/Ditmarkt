@@ -266,6 +266,11 @@ display: none;
 .Kays-list h1 p{
     font-size: 1.2rem !important;
 }
+.table-data{
+  line-height: 1 !important;
+  letter-spacing: 2rem !important;
+  font-size: 1.2rem !important;
+}
 
 }
 

@@ -344,14 +344,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* input:focus {
-  background: linear-gradient(#fff 0 0) padding-box,
-    linear-gradient(180deg, hsl(249, 99%, 64%) 0%, hsl(278, 94%, 30%) 100%);
-  border: 0.1rem solid transparent;
-  border-radius: 0.5rem;
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-} */
+  
 
 .inputs {
   display: flex;
@@ -389,52 +382,22 @@ input::-webkit-inner-spin-button {
         height: 3rem;
     }
 
-/* Contact us page */
+ /* payment table */
+ #payment-table tr > td{
+  padding: 2rem;
+  font-size: 2rem;
+ }
+
+ .table-data{
+  padding: 1rem;
+  font-size: 2rem;
+ }
+.payment-table-dashed {
+    border-bottom-style: dashed;
+    border-bottom-width: 100%;
+    border-bottom-color: lightgray;
+}
+/* End of payment table */
 
 
-
-
-.form{
-  position: relative;
-}
-.form input:not([type="checkbox"]),
-.form textarea,
-.form select{
-  height: 5rem;
-  border-radius: .5rem;
-  border: .2rem solid var(--bg-border) !important;
-}
-.form .form-group{
-  margin: 0 0 1.5rem;
-}
-.form label{
-  font-size: 1.4rem;
-}
-.form .password_display{
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding: 1.9rem;
-}
-.form .password-show-hide{
-  padding-right: 7rem !important;
-}
-.form .form-check-label span{
-  position: relative;
-  padding: 0 0 0 .5rem;
-  top: .8rem;
-}
-.form .form-check-input{
-  box-shadow: none;
-  border-color: var(--text-primary);
-}
-.form .form-check-input:focus {
-  border-color: var(--text-primary);
-}
-.form .form-check-input:checked {
-  background-color: var(--text-primary);
-}
-.form .tos{
-  padding: 4rem 0 0;
-}
-/* end form */
+ 
