@@ -105,7 +105,7 @@ span{
     line-height: 1;
 }
  .text-white{
-    color: var(--text-white);
+    color: var(--text-white) !important;
  }
 .bg-primary{
     color: var(--text-white);

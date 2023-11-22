@@ -102,7 +102,10 @@ cursor: pointer;
 .footer{
   background-color:  #E6F1FC;
   position: sticky;
-
+  
+}
+footer ul > li{
+  color: white !important;
 }
  .footer-grid{
   display: grid;
@@ -124,6 +127,7 @@ cursor: pointer;
 
 .bg-primary-footer{
   background: #004F9A;
+  
 }
 .nav-footer__wrapper{
   padding-top: 6rem;

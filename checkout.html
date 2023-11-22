@@ -14,16 +14,16 @@
 		integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/media.css" />
 </head>
 
 <body>
 	<section>
-		<nav class=" ">
+		<nav>
 			<ul class=" d-flex  justify-content-between  align-content-center text-blue p-10">
 				<li class="nav-item  " style="color: #FFFFFF;"> <a class=" nav-link fs-4 ">&#60;</a></li>
 				<li class="nav-item  " style="color: #FFFFFF;"> <a class=" nav-link fs-4 ">checkout</a></li>
 				<li class="nav-item "> </li>
-
 
 			</ul>
 		</nav>
@@ -74,12 +74,12 @@
 
 			<!-- 2nd Modal content -->
 
-			<div style="position: absolute; right: 2%; top: 12%; max-width: 90%;">
+			<div style="position: absolute; right: 25%; top: 12%; max-width: 90%;" class="checkout-smaller-modal">
 				<div class="card pe-3 cards-content">
 
 					<form class="card-body">
 						<div class="">
-							<button type="submit" class="btn bg-primary  w-100-percent rounded-pill my-3">
+							<button type="submit" class="btn bg-primary  w-100-percent rounded-pill my-3 p-10">
 								<span class="text-white font-w-400">Continue to checkout</span>
 							</button>
 						</div>
@@ -113,7 +113,7 @@
 
 		<!--3rd  Modal content -->
 		<section>
-			<div style="width: 90%; margin: 2rem;" class="container">
+			<div style="width: 90%; margin: 2rem;" class="container main-container">
 				<div class="card cards-content mt-4 overflow-hidden">
 					<div style="background: #F3F8FC;">
 						<div style="display: flex; align-items:center; justify-content:space-between; ">
@@ -155,116 +155,114 @@
 										<input id="cardNumber" type="text" class="card-input checkout-input name" placeholder=" ">
 									</div>
 
-									<div style="display: flex;flex-direction: row; gap: 2rem; ">
-										<div class="inputs">
+									<div style="display: flex; flex-direction: row; gap: 2rem; ">
+										<div class="inputs" style="flex: 1;">
 											<label for="firstName">First Name</label>
-											<input id="firstName" type="text" placeholder=" " minlength="" maxlength="36"
-												class="name checkout-input">
-
+											<input id="firstName" type="text" placeholder=" " class="name checkout-input">
 										</div>
-										<div class="inputs">
+										<div class="inputs" style="flex: 1;">
 											<label for="lastName">Last Name</label>
-											<input id="LastName" type="text" placeholder=" " minlength="" maxlength="36"
-												class="name checkout-input">
-
+											<input id="LastName" type="text" placeholder=" " class="name checkout-input">
 										</div>
 									</div>
 
-									<div class="exp-cvc">
-										<div class="inputs">
-											<label for="exp">MM*</label>
-											<div class="month-year">
-												<div class="month-error">
-													<select name="Month" id="month">
-														<option value="" selected disabled>MM</option>
-														<option value="Jan">Jan</option>
-														<option value="Feb">Feb</option>
-														<option value="March">March</option>
-														<option value="April">April</option>
-														<option value="May">May</option>
-														<option value="June">June</option>
-														<option value="July">July</option>
-														<option value="Aug">Aug</option>
-														<option value="Sep">Sep</option>
-														<option value="Oct">Oct</option>
-														<option value="Nov">Nov</option>
-														<option value="Dec">Dec</option>
-													</select>
-												</div>
+								</div>
+
+								<div class="exp-cvc">
+									<div class="inputs">
+										<label for="exp">MM*</label>
+										<div class="month-year">
+											<div class="month-error">
+												<select name="Month" id="month">
+													<option value="" selected disabled>MM</option>
+													<option value="Jan">Jan</option>
+													<option value="Feb">Feb</option>
+													<option value="March">March</option>
+													<option value="April">April</option>
+													<option value="May">May</option>
+													<option value="June">June</option>
+													<option value="July">July</option>
+													<option value="Aug">Aug</option>
+													<option value="Sep">Sep</option>
+													<option value="Oct">Oct</option>
+													<option value="Nov">Nov</option>
+													<option value="Dec">Dec</option>
+												</select>
 											</div>
 										</div>
-
-										<div class="inputs">
-											<label for="Year">YY*</label>
-											<select name="Year" id="year">
-												<option value="" selected disabled>YY</option>
-												<option value="2020">2020</option>
-												<option value="2021">2021</option>
-												<option value="2022">2022</option>
-												<option value="2023">2023</option>
-												<option value="2024">2024</option>
-												<option value="2025">2025</option>
-												<option value="2026">2026</option>
-												<option value="2027">2027</option>
-											</select>
-										</div>
-
-										<div class="inputs">
-											<label for="cvc">CVC*</label>
-											<input id="cvc" type="number" minlength="3" maxlength="3" placeholder="e.g. 123"
-												class="checkout-input">
-										</div>
 									</div>
+
 									<div class="inputs">
-										<label for="PhoneNumber">Phone Number</label>
-										<input id="PhoneNumber" type="number" class="name checkout-input" placeholder="081000000000 ">
+										<label for="Year">YY*</label>
+										<select name="Year" id="year">
+											<option value="" selected disabled>YY</option>
+											<option value="2020">2020</option>
+											<option value="2021">2021</option>
+											<option value="2022">2022</option>
+											<option value="2023">2023</option>
+											<option value="2024">2024</option>
+											<option value="2025">2025</option>
+											<option value="2026">2026</option>
+											<option value="2027">2027</option>
+										</select>
+									</div>
+
+									<div class="inputs">
+										<label for="cvc">CVC*</label>
+										<input id="cvc" type="number" minlength="3" maxlength="3" placeholder="e.g. 123"
+											class="checkout-input">
 									</div>
 								</div>
-							</form>
-
-							<div>
-								<div class="d-flex justify-content-between ">
-									<p><a href="">Billing Address</a></p>
-									<p><a class="text-primary " href="">Add new address</a></p>
+								<div class="inputs">
+									<label for="PhoneNumber">Phone Number</label>
+									<input id="PhoneNumber" type="number" class="name checkout-input" placeholder="081000000000 ">
 								</div>
+						</div>
+						</form>
 
-								<div class=" ">
-									<input class="mr-1 fs-5" type="checkbox" name="flexRadioDefault" id="Address">
-									<label class="form-check-label fs-4 " for="Address">Same as delivery Address</label>
-								</div>
+						<div class="container">
+							<div class="d-flex justify-content-between ">
+								<p><a href="">Billing Address</a></p>
+								<p><a class="text-primary " href="">Add new address</a></p>
 							</div>
 
-							<div>
-								<p>Building Kid Steps - Gulf Coast Rehabilitation, Victoria, TX
-									<span>77901</span>
-								</p>
+							<div class=" ">
+								<input class="mr-1 fs-5" type="checkbox" name="flexRadioDefault" id="Address">
+								<label class="form-check-label fs-4 " for="Address">Same as delivery Address</label>
 							</div>
+						</div>
 
-							<div>
-								<p>Card preferences</p>
-								<div class="pb-2">
-									<input class="mr-1 fs-5" type="checkbox" name="flexRadioDefault" id="Defaultcard">
-									<label class="form-check-label fs-4 " for="Defaultcard">Set as default card</label>
-								</div>
+						<div>
+							<p>Building Kid Steps - Gulf Coast Rehabilitation, Victoria, TX
+								<span>77901</span>
+							</p>
+						</div>
+
+						<div>
+							<p>Card preferences</p>
+							<div class="pb-40">
+								<input class="ml-10 fs-5" type="checkbox" name="flexRadioDefault" id="Defaultcard">
+								<label class="form-check-label fs-4 " for="Defaultcard">Set as default card</label>
 							</div>
+						</div>
 
-							<div class="footer-border-color pb-1"></div>
+						<div class="footer-border-color "></div>
 
-							<div class="d-flex justify-content-between pb-2 ">
-								<p>Other ways to pay</p>
-								<select name="pay" id="paymnt" style="outline: none; border: none;">
-									<option value=""></option>
-								</select>
-							</div>
+						<div class="d-flex justify-content-between py-5 ">
+							<p>Other ways to pay</p>
+							<select name="pay" id="paymnt" style="outline: none; border: none;">
+								<option value=""></option>
+							</select>
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 		</section>
 
 		<!-- footer -->
 
-		<footer class="text-blue d-flex justify-content-between p-10">
+		<footer class="bg-primary  d-flex justify-content-between p-10">
 			<div>
 				<p class="text-white">© 2023 Sitename. All Rights Reserved.</p>
 			</div>
