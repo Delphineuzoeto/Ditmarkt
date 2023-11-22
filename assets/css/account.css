@@ -1,3 +1,11 @@
+.account-page-container {
+  padding: 2rem 0rem 10rem 10rem;
+}
+
+.account-page {
+  padding: 5rem 1rem;
+}
+
 .page-sidebar {
   margin: 0;
 }
@@ -19,11 +27,11 @@
 
 /* page */
 
-.page {
+.account-page {
   font-family: var(--font-bogle-regular);
 }
 
-.page .page-modal {
+.account-page .page-modal {
   border-radius: 1.5rem;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.06);
   margin: 1rem 0;
@@ -52,4 +60,31 @@
 
 .page-modal .modal-content {
   padding: 1.5rem;
+}
+
+.payment-card-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.payment-card {
+  border: 1px solid var(--bg-category);
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+  height: 14rem;
+  max-width: 22rem;
+  width: 100%;
+  padding: 2.4rem 2.1rem;
+}
+
+.payment-card img {
+  /* having issues centralizing the images so it affects the image on the second card */
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.payment-card .card-desc {
+  font-family: var(--font-bogle-bold);
+  font-size: 1.5rem;
 }
