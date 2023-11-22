@@ -2,57 +2,57 @@
 @import url("root.css");
 
 .section,
-.footer-section{
+.footer-section {
   position: relative;
 }
-.section-padding{
+.section-padding {
   position: relative;
   padding: 5rem 1rem;
   background: var(--white);
 }
-.logo__head{
-    position: relative;
-    text-align: center;
+.logo__head {
+  position: relative;
+  text-align: center;
 }
-.signin{
-    width: 100%;
-    max-width: 55rem;
-    padding: 2rem;
-    margin: 0 auto;
+.signin {
+  width: 100%;
+  max-width: 55rem;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
 /* form */
-.form{
+.form {
   position: relative;
 }
 .form input:not([type="checkbox"]),
 .form textarea,
-.form select{
+.form select {
   height: 5rem;
-  border-radius: .5rem;
-  border: .2rem solid var(--bg-border) !important;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--bg-border) !important;
 }
-.form .form-group{
+.form .form-group {
   margin: 0 0 1.5rem;
 }
-.form label{
+.form label {
   font-size: 1.4rem;
 }
-.form .password_display{
+.form .password_display {
   top: 0;
   bottom: 0;
   right: 0;
   padding: 1.9rem;
 }
-.form .password-show-hide{
+.form .password-show-hide {
   padding-right: 7rem !important;
 }
-.form .form-check-label span{
+.form .form-check-label span {
   position: relative;
-  padding: 0 0 0 .5rem;
-  top: .8rem;
+  padding: 0 0 0 0.5rem;
+  top: 0.8rem;
 }
-.form .form-check-input{
+.form .form-check-input {
   box-shadow: none;
   border-color: var(--text-primary);
 }
@@ -62,76 +62,76 @@
 .form .form-check-input:checked {
   background-color: var(--text-primary);
 }
-.form .tos{
+.form .tos {
   padding: 4rem 0 0;
 }
 /* end form */
 
 /* navbar */
-#navbar{
+#navbar {
   background: var(--bg-primary) !important;
   padding: 2rem 0;
 }
-.navbar-brand{
+.navbar-brand {
   margin: 0 10rem 0 0;
 }
-.navbar .search__bar{
+.navbar .search__bar {
   width: 100%;
   max-width: 80rem;
   margin: 0 5rem 0 0;
 }
-.navbar .search__bar input{
+.navbar .search__bar input {
   border-radius: 5rem;
   font-size: 1.2rem;
   padding: 1rem 5rem 1rem 2rem;
 }
-.navbar .search__bar .btn{
+.navbar .search__bar .btn {
   position: absolute;
   background-color: var(--bg-active-menu);
   right: 1rem;
-  top: .2rem;
+  top: 0.2rem;
   border-radius: 50rem;
   width: 3.5rem;
   height: 3.5rem;
 }
-.navbar .search__bar .btn img{
+.navbar .search__bar .btn img {
   width: inherit;
   height: inherit;
 }
-.header_user{
+.header_user {
   width: 40%;
 }
-.header_user .flex{
+.header_user .flex {
   color: var(--text-menu);
   justify-content: space-evenly;
 }
-.header_user img{
+.header_user img {
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
 }
-.header_user span{
+.header_user span {
   color: var(--bg-border);
   text-transform: capitalize;
   font-size: 1.2rem;
 }
-.header_user .anchor{
+.header_user .anchor {
   color: var(--white);
   font-size: 1.3rem;
   text-decoration: none;
 }
-.header_user-action{
+.header_user-action {
   display: grid;
 }
-.header_user-cart{
+.header_user-cart {
   flex-direction: column;
 }
-.header_user-cart img{
+.header_user-cart img {
   width: 2rem;
   height: 2rem;
-  margin: 0 auto .3rem auto;
+  margin: 0 auto 0.3rem auto;
 }
-.header_user-cart-indicator small{
+.header_user-cart-indicator small {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,12 +144,12 @@
   border-radius: 5rem;
   top: -1rem;
   right: 2rem;
-  border: .1rem solid var(--bg-danger);
+  border: 0.1rem solid var(--bg-danger);
 }
-.header_user-cart span{
+.header_user-cart span {
   color: var(--bg-white-80);
 }
-.sub-navbar{
+.sub-navbar {
   background-color: var(--bg-footer);
   padding: 2rem;
 }
@@ -175,36 +175,36 @@
   padding-right: 1rem;
 }
 .footer .footer_right ul {
-  padding: 0 0 .5rem;
+  padding: 0 0 0.5rem;
 }
 /* end footer */
 
 /* pages */
-.page-container{
+.page-container {
   padding: 2rem 10rem 10rem;
 }
-.page-navbar{
+.page-navbar {
   margin: 0 3rem;
 }
-.page-navbar ul li{
+.page-navbar ul li {
   display: block;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-.page-navbar ul li.active{
+.page-navbar ul li.active {
   background: var(--bg-primary);
 }
-.page-navbar ul li.active a{
+.page-navbar ul li.active a {
   color: var(--white);
 }
-.page-navbar ul li a{
+.page-navbar ul li a {
   display: block;
   padding: 1.5rem 2rem;
   color: var(--bg-primary);
 }
-.page{
+.page {
   padding: 5rem;
   border-radius: 2rem;
-  border: .1rem solid var(--bg-border);
+  border: 0.1rem solid var(--bg-border);
 }
 .page h1 {
   font-size: 2rem;
@@ -225,3 +225,7 @@
   font-size: 1.6rem;
 }
 /* end pages */
+
+.sss {
+  border: 1px solid red;
+}
