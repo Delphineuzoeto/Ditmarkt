@@ -1,6 +1,21 @@
-const modalArrow = document.querySelector(".arrow-icon");
-const modalContent = document.querySelector(".modal-content");
+document.addEventListener("DOMContentLoaded", () => {
+  const modalArrows = document.querySelectorAll(".arrow-icon");
+  const modals = document.querySelectorAll(".page-modal");
 
-modalArrow.addEventListener("click", () => {
-  modalContent.classList.toggle("hidden");
+  modalArrows.forEach((arrow, index) => {
+    arrow.addEventListener("click", () => {
+      const modalContent = modals[index].querySelector(".modal-content");
+
+      // Close other modals
+      modals.forEach((otherModal, otherIndex) => {
+        if (otherIndex !== index) {
+          const otherModalContent = otherModal.querySelector(".modal-content");
+          otherModalContent.classList.add("hidden");
+        }
+      });
+
+      // toggle the hidden class on the clicked modal
+      modalContent.classList.toggle("hidden");
+    });
+  });
 });

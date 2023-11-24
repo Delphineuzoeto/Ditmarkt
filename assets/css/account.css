@@ -25,6 +25,10 @@
   color: var(--black);
 }
 
+.right-border {
+  border-right: 1px solid var(--bg-border);
+}
+
 /* page */
 
 .account-page {
@@ -39,13 +43,20 @@
 }
 
 .page-modal .modal-header {
-  background: var(--bg-category);
+  background: #E6F1FC;
   padding: 0 1.5rem;
 }
 
 .page-modal h3 {
   font-size: 1.7rem;
   font-family: var(--font-bogle-bold);
+}
+
+h6 {
+  font-family: var(--font-bogle-bold);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--black);
 }
 
 .page-modal .left-content img {
@@ -87,4 +98,19 @@
 .payment-card .card-desc {
   font-family: var(--font-bogle-bold);
   font-size: 1.5rem;
+}
+
+
+.address-btn {
+  border-radius: 2rem;
+  padding: 8px 24px 8px 24px;
+  background: transparent;
+  border: 1px solid var(--bg-border);
+  font-family: var(--font-bogle-bold);
+  font-size: 1.4rem;
+}
+
+.cta-footer {
+  background-color: #E6F1FC;
+  padding: 2rem 0;
 }
