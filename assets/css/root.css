@@ -1,5 +1,5 @@
 :root {
-  --bg-primary: #004f9a;
+  --bg-primary: #4B64D5;
   --bg-secondary: #0071dc;
   --bg-info: #17a2b8;
   --bg-danger: #d51b16;
@@ -7,34 +7,22 @@
   --bg-success: #329231;
   --bg-border: #cfd2d7;
   --bg-paypal: #f2f2f2;
+  --bg-footer: #354894;
   --bg-active-menu: #ffc220;
   --text-menu: #dbdbff;
   --text-primary: #2e2f32;
   --text-secondary: #777777;
   --bg-category: #d9d9d9;
-  --font-black: "Bogle";
-  --font-bold: "Bogle Bold";
-  --font-regular: "Bogle Regular";
-  --font-italic: "Bogle Italic";
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 10px;
+  --font-bogle: "Bogle";
+  --font-bogle-bold: "Bogle Bold";
+  --font-bogle-regular: "Bogle Regular";
+  --font-bogle-italic: "Bogle Italic";
 }
 
 @font-face {
   font-family: "Bogle";
   src: url("../fonts/BOGLEBLACK.OTF") format("OpenType");
-  font-weight: 800;
+  font-weight: 500;
   font-size: 1.4rem;
 }
 
@@ -59,6 +47,109 @@ html {
   font-size: 1.4rem;
 }
 
-.sss {
-  border: 1px solid red;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  line-height: 160%;
+  font-family: var(--font-bogle-regular);
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 3rem;
+  font-family: var(--font-bogle-bold);
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1.8rem;
+  font-family: var(--font-bogle-bold);
+  margin: 2.5rem 0;
+}
+
+span,
+small,
+div,
+a,
+p {
+  font-size: 1.5rem;
+  font-family: var(--font-bogle-regular);
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+hr {
+  display: block;
+  padding: 1.2rem;
+  color: var(--bg-border);
+}
+.ul-formatting{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ul-formatting li{
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+.ul-formatting li a{
+  color: var(--white);
+  text-decoration: none;
+}
+.btn-info:hover{
+  color: var(--white);
+  background-color: var(--bg-info);
+  border-color: var(--bg-info);
+}
+.btn-danger:hover{
+  color: var(--white);
+  background-color: var(--bg-danger);
+  border-color: var(--bg-danger);
+}
+.btn-success:hover{
+  color: var(--white);
+  background-color: var(--bg-success);
+  border-color: var(--bg-success);
+}
+.btn-warning:hover{
+  color: var(--black);
+  background-color: var(--bg-warning);
+}
+.btn-primary:hover{
+  color: var(--white);
+  background-color: var(--bg-primary);
+  border-color: var(--bg-primary);
+}
+.btn-secondary:hover{
+  color: var(--white);
+  background-color: var(--bg-secondary);
+  border-color: var(--bg-secondary);
+}
+.btn-default:hover{
+  color: var(--black);
+  background-color: var(--bg-default);
+}
+.div-padding{
+  position: relative;
+  padding: 2rem;
 }
