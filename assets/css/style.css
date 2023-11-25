@@ -201,7 +201,7 @@ footer ul > li{
   display: block;
 }
 
-/* end od about.html sidebar */
+/* end of about.html sidebar */
 
 /* product html */
 .product-card{
@@ -262,6 +262,10 @@ footer ul > li{
 
  
  /* first slide */
+ #image-carousel .splide__arrows{
+    display: none;
+}
+
 .splide__arrowss {
     background-color: inherit; 
     color: #fff; 
@@ -278,15 +282,7 @@ footer ul > li{
 
 /* end of first slide */
 
- /* second slide */
-.slide__prev{
-margin-right: 2rem;
-}
- 
-.slide__next{
 
- margin-left: 1rem;
-}
 
 /* add to cart */
 

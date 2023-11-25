@@ -16,6 +16,38 @@
 		},
   } ).mount();
 } );
+ document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#image-carousels', {
+		perPage    : 4,
+		breakpoints: {
+			575: {
+				perPage: 3,
+			},
+			767: {
+				perPage: 3,
+			},
+			991: {
+				perPage: 3,
+			},
+		},
+  } ).mount();
+} );
+ document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#images-carousels', {
+		perPage    : 4,
+		breakpoints: {
+			575: {
+				perPage: 3,
+			},
+			767: {
+				perPage: 3,
+			},
+			991: {
+				perPage: 3,
+			},
+		},
+  } ).mount();
+} );
 
 
 
@@ -37,6 +69,8 @@
 		//  heightRatio: 0.5,
   } ).mount();
 } );
+
+// display current Date in checkout.html
 
  const currentDate = new Date();
 
