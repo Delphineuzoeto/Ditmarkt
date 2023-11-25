@@ -19,3 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// edit btn
+const editBtn = document.getElementById("edit-btn");
+const addressFormWrapper = document.querySelector(".address-form-wrapper");
+
+editBtn.addEventListener("click", () => {
+  addressFormWrapper.classList.toggle("hidden");
+});

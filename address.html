@@ -162,7 +162,7 @@
                         Personal info </a>
                     </li>
                     <li class="">
-                    <a href="address.html" class="anchor">
+                    <a href="privacy.html" class="anchor">
                         <!-- icon -->
                         <img src="/assets/images/icon/car.png" alt="car icon">
                         Addresses </a>
@@ -274,141 +274,31 @@
 
           <div class="col-md-9">
             <div class="account-page">
-                <h1 class="mb-30">Welcome to your Account</h1>
+                <h1 class="mb-30">Delivery Addresses</h1>
                 <div class="page__content">
 
-                    <!-- payment modal -->
                     <div class="page-modal">
-                        <!-- header -->
-                        <div class="modal-header flex align-items-center space-between">
-                            <div class="left-content flex gap-1 align-items-center">
-                                <img src="/assets/images/icon/invoice.png" alt="invoice icon" class="w-20 h-20">
-                                <h3>Purchase history</h3>
-                            </div>
-                            <div class="arrow-icon">
-                                <img src="/assets/images/icon/right-arrow.png" alt="right caret" class="w-30 h-30 cursor">
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="modal-content hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolor ipsa odio esse nisi eligendi accusantium beatae quisquam dignissimos perspiciatis provident, deserunt suscipit ex totam quia eveniet nam officiis voluptas corporis error animi? Similique sint magni non illo tenetur ad, praesentium maxime optio labore, alias recusandae minima quia magnam. Exercitationem.</p>
-                        </div>
-                    </div>
-
-                    <!-- wallet modal -->
-                    <div class="page-modal">
-                        <!-- header -->
-                        <div class="modal-header flex align-items-center space-between">
-                            <div class="left-content flex gap-1 align-items-center">
-                                <img src="/assets/images/icon/wallet.png" alt="wallet icon" class="w-20 h-20">
-                                <div class="flex align-items-center gap-1">
-                                    <h3>Wallet</h3>
-                                    <span>| Payments method</span>
-                                </div>
-                            </div>
-                            <div class="arrow-icon">
-                                <img src="/assets/images/icon/right-arrow.png" alt="right caret" class="w-30 h-30 cursor">
-                            </div>
-                        </div>
                         <!-- content -->
                         <div class="modal-content">
-                            <span>Learn more about payment methods we accept.</span>
-                            <!-- payment cards -->
-                            <div class="payment-card-wrapper mt-20">
-                                <div class="payment-card flex align-items-center justify-content-center">
-                                    <div>
-                                        <img src="/assets/images/icon/Group 47460.png" alt="payment cards">
-                                        <p class="text-center mt-10 card-desc">Credit / Debit card</p>
-                                    </div>
-                                </div>
-                                <div class="payment-card flex align-items-center justify-content-center">
-                                    <div>
-                                        <img src="/assets/images/icon/Rectangle 948.png" alt="discover cards" class="w-80">
-                                        <p class="text-center mt-10 card-desc">Electronic Benefits Transfer</p>
-                                    </div>
-                                </div>
-                                <div class="payment-card flex align-items-center justify-content-center">
-                                    <div>
-                                        <img src="/assets/images/icon/Rectangle 948.png" alt="discover cards" class="w-80">
-                                        <p class="text-center mt-10 card-desc">Benefit card</p>
-                                    </div>
-                                </div>
-                                <div class="payment-card flex align-items-center justify-content-center">
-                                    <div>
-                                        <img src="/assets/images/icon/Rectangle 948.png" alt="discover cards" class="w-80">
-                                        <p class="text-center mt-10 card-desc">Benefit card</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- account modal -->
-                    <div class="page-modal">
-                        <!-- header -->
-                        <div class="modal-header flex align-items-center space-between">
-                            <div class="left-content flex gap-1 align-items-center">
-                                <img src="/assets/images/icon/wallet.png" alt="wallet icon" class="w-20 h-20">
-                                <div class="mb-10">
-                                    <h3 class="mb-0">Account info</h3>
-                                    <span class="">Addresses, contact information and password</span>
-                                </div>
-                            </div>
-                            <div class="arrow-icon">
-                                <img src="/assets/images/icon/right-arrow.png" alt="right caret" class="w-30 h-30 cursor">
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="modal-content hidden">
-                            <div class="row">
-                                <div class="col-8">
-                                    <h6 class="">Email address: </h6>
-                                    <p>8letterstudio@gmail.com </p>
-                                </div>
-                                <div class="col-4">
-                                    <h6>Phone number: </h6>
-                                    <div>Add phone numbr</div>
-                                </div>
-                            </div>
+                            <span>Kay Marshal</span>
                             <div class="flex align-items-center space-between mt-10">
                                 <div class="">
-                                    <h6>Address: </h6>
                                     <p>Building Kid Steps - Gulf Coast Rehabilitation, Victoria, TX 77901 </p>
                                 </div>
-                                <button class="address-btn">View addresses</button>
+                                <div class="flex align-items-center gap-1">
+                                    <button class="address-btn" id="edit-btn">Edit</button> | <button class="address-btn">Remove</button>
+                                </div>
+                            </div>
+
+                            <div class="address-form-wrapper mt-20 hidden">
+                                <form action="" class="">
+                                    <input type="text" name="address" id="address" placeholder="Enter your new address here..." class="block w-full h-40 btn-rounded p-20">
+                                </form>
                             </div>
                         </div>
                     </div>
-
-                    <!-- list modal -->
-                    <div class="page-modal">
-                        <!-- header -->
-                        <div class="modal-header flex align-items-center space-between">
-                            <div class="left-content flex gap-1 align-items-center">
-                                <img src="/assets/images/icon/186400_heart_like_love_icon.png" alt="wallet icon" class="w-20 h-20">
-                                <div class="mb-10">
-                                    <h3 class="mb-0">List (2)</h3>
-                                </div>
-                            </div>
-                            <div class="arrow-icon">
-                                <img src="/assets/images/icon/right-arrow.png" alt="right caret" class="w-30 h-30 cursor">
-                            </div>
-                        </div>
-                        <!-- content -->
-                        <div class="modal-content hidden">
-                            <div class="flex align-items-center space-between mt-10">
-                                <div class="">
-                                    <h6>Kay's List</h6>
-                                    <p>3 items . Primary </p>
-                                </div>
-                                <div>
-                                  <a href="">create new list</a>
-
-                                  <button class="address-btn">View list</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
             </div>
           </div>
