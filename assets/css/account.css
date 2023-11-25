@@ -43,7 +43,7 @@
 }
 
 .page-modal .modal-header {
-  background: #E6F1FC;
+  background: #e6f1fc;
   padding: 0 1.5rem;
 }
 
@@ -100,7 +100,6 @@ h6 {
   font-size: 1.5rem;
 }
 
-
 .address-btn {
   border-radius: 2rem;
   padding: 8px 24px 8px 24px;
@@ -111,6 +110,27 @@ h6 {
 }
 
 .cta-footer {
-  background-color: #E6F1FC;
+  background-color: #e6f1fc;
   padding: 2rem 0;
+}
+
+/* personal info page */
+.personal-info-wrapper .page {
+  padding: 2rem;
+}
+
+.personal-info-wrapper h3 {
+  font-family: var(--font-bogle-bold);
+}
+
+.personal-info-wrapper label {
+  font-family: var(--font-bogle-bold);
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: .5rem;
+}
+
+.personal-info-wrapper .form-check p {
+  font-family: var(--font-bogle-regular);
+  font-size: 1.2rem;
 }
