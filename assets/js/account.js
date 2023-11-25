@@ -24,6 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
 const editBtn = document.getElementById("edit-btn");
 const addressFormWrapper = document.querySelector(".address-form-wrapper");
 
-editBtn.addEventListener("click", () => {
-  addressFormWrapper.classList.toggle("hidden");
+// dunno why this fn is affecting the execution of the fn below. this is on the adress page (commented out to allw the other fn work)
+// editBtn.addEventListener("click", () => {
+//   addressFormWrapper.classList.toggle("hidden");
+// });
+
+// toggle personal information edit btn (personal information page)
+const editNameBtn = document.getElementById("edit-name");
+const editPersonalInfoWrapper = document.getElementById(
+  "edit-personal-info-wrapper"
+);
+
+editNameBtn.addEventListener("click", () => {
+  editPersonalInfoWrapper.classList.toggle("hidden");
 });

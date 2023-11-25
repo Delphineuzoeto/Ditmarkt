@@ -280,8 +280,134 @@
                     <div class="personal-info-wrapper row gap-5">
                         <div class="page col-7">
                             <h3>Your personal information</h3>
+
+                            <small class="">Full name</small>
+                            <div class="flex space-between">
+                                <div class="border-bottom w-full heading-6">
+                                    Kay Marshal
+                                </div>
+                                <button class="address-btn" id="edit-name">Edit</button>
+                            </div>
+                            <!-- edit personal info -->
+                            <div class="hidden" id="edit-personal-info-wrapper">
+                                <h3>Your personal information</h3>
+                                <h6 class="heading-6 mb-20">Edit Full name</h6>
+
+                                <form action="">
+                                    <small class="mb-10">* Required fields</small>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="firstname" placeholder="Firstname">
+                                        <label for="firstname">First name</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="lastname" placeholder="Lastname">
+                                        <label for="lastname">Last name</label>
+                                    </div>
+
+                                    <!-- btns -->
+                                    <div class="mt-20 text-right">
+                                        <button class="address-btn">cancel</button>
+                                        <button class="address-btn save-btn">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- email address -->
+                            <section class="email-section mt-40">
+                                <small class="">Email address</small>
+                            <div class="flex space-between">
+                                <div class="border-bottom w-full heading-6">
+                                    8letterstudios@gmail.com
+                                </div>
+                                <button class="address-btn" id="edit-email">Edit</button>
+                            </div>
+                            <!-- edit personal info -->
+                            <div class="hidden" id="edit-email-info-wrapper">
+                                <h3>Your Email address</h3>
+                                <h6 class="heading-6 mb-20">Edit Email address</h6>
+
+                                <form action="">
+                                    <small class="mb-10">* Required fields</small>
+
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your new email address...">
+                                        <label for="email">new Email address</label>
+                                    </div>
+
+                                    <!-- btns -->
+                                    <div class="mt-20 text-right">
+                                        <button class="address-btn">cancel</button>
+                                        <button class="address-btn save-btn">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </section>
+
+                            <!-- email address -->
+                            <section class="email-section mt-40">
+                                <small class="">Phone number</small>
+                            <div class="flex space-between">
+                                <div class="border-bottom w-full heading-6">
+                                    Add phone number
+                                </div>
+                                <button class="address-btn" id="edit-phone">Edit</button>
+                            </div>
+                            <!-- edit personal info -->
+                            <div class="hidden" id="edit-phone-info-wrapper">
+                                <h3>Your Email address</h3>
+                                <h6 class="heading-6 mb-20">Add phone number</h6>
+
+                                <form action="">
+                                    <small class="mb-10">* Required fields</small>
+
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" placeholder="+2340000000000">
+                                        <label for="phone">Phone number</label>
+                                    </div>
+
+                                    <!-- btns -->
+                                    <div class="mt-20 text-right">
+                                        <button class="address-btn">cancel</button>
+                                        <button class="address-btn save-btn">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </section>
+
+                             <!-- password -->
+                            <section class="email-section mt-40">
+                            <div class="flex space-between">
+                                <div class="w-full heading-6 mb-20">
+                                    Edit password
+                                </div>
+                            </div>
+                            <!-- edit personal info -->
+                            <div class="" id="edit-password-info-wrapper">
+
+                                <form action="">
+                                    <small class="mb-10">* Required fields</small>
+
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="currentPassword" placeholder="currentPassword">
+                                        <label for="currentPassword">currentPassword</label>
+                                    </div>
+
+                                    <div class="form-floating mt-20">
+                                        <input type="password" class="form-control" id="newPassword" placeholder="newPassword">
+                                        <label for="newPassword">newPassword</label>
+                                    </div>
+
+                                    <!-- btns -->
+                                    <div class="mt-20 text-right">
+                                        <button class="address-btn">cancel</button>
+                                        <button class="address-btn save-btn">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </section>
                         </div>
-                        <div class="page col-4">
+                        <div class="page col-4 preference-right-section">
                             <h3>Sign in preference</h3>
 
                             <!-- sign in prefernces -->

@@ -127,10 +127,33 @@ h6 {
   font-family: var(--font-bogle-bold);
   font-size: 1.4rem;
   color: var(--text-dark);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .personal-info-wrapper .form-check p {
   font-family: var(--font-bogle-regular);
   font-size: 1.2rem;
+}
+
+.personal-info-wrapper small {
+  font-family: var(--font-bogle-regular);
+  font-size: 1.4rem;
+  color: #777777;
+}
+
+.heading-6 {
+  font-family: var(--font-bogle-bold);
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  margin: 0.5rem 0;
+}
+
+.save-btn {
+  background: var(--bg-primary);
+  color: var(--text-white);
+}
+
+.preference-right-section {
+  max-height: 41rem;
+  height: 100%;
 }
