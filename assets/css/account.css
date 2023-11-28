@@ -157,3 +157,38 @@ h6 {
   max-height: 41rem;
   height: 100%;
 }
+
+/* communications & privacy */
+.accordion {
+  max-width: 60rem;
+  /* height: 6rem; */
+  border-bottom: 1px solid var(--bg-border);
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.accordion-label .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.accordion-content {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.accordion-input:checked + .accordion-label .icon {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+.accordion-input:checked + .accordion-label + .accordion-content {
+  display: block;
+}
