@@ -192,3 +192,13 @@ h6 {
 .accordion-input:checked + .accordion-label + .accordion-content {
   display: block;
 }
+
+/* purchase history */
+.no-order_container {
+  max-width: 24rem;
+  margin: 0 auto;
+}
+
+.no-order_container img {
+  width: 100%;
+}
