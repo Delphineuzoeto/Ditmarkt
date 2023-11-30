@@ -213,7 +213,7 @@ for (const Images of imageData) {
 				}
 			}
 
-			// Function to show or hide the modal based on screen width
+			// Function to show or hide the modal for home screen based on screen width
   function toggleModal() {
     const modal = document.getElementById('myModal');
     if (window.innerWidth >= 991) {
@@ -222,10 +222,13 @@ for (const Images of imageData) {
       modal.style.display = 'none';
     }
   }
+	
 
   // Show or hide the modal on page load and on window resize
   window.addEventListener('load', toggleModal);
   window.addEventListener('resize', toggleModal);
+// end
+
 
 // function to toggle and show sidebar main content
 

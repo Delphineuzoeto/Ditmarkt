@@ -1,3 +1,9 @@
 {
-	"liveServer.settings.port": 5501
+	"liveServer.settings.port": 5501,
+	"liveServer.settings.ignoreFiles": [
+    "**/*.md",
+    "path/to/fontawesome.js",  // Adjust the path to your FontAwesome script
+       // Adjust the CDN link if applicable
+  ]
 }
+ 

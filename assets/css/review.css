@@ -1,0 +1,71 @@
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+	 overflow: hidden; /*to hide exta content */
+}
+ 
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 4px; background-color: #2196F3}
+.bar-4 {width: 30%; height: 4px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 4px; background-color: #2196F3}
+.bar-2 {width: 4%; height: 4px; background-color: #2196F3}
+.bar-1 {width: 15%; height: 4px; background-color: #2196F3}
+
+
+#other-customer  {
+  display: grid; 
+  grid-template-columns: 70% 35%;  
+   max-width: 100%;
+}
+
+
+#other-customer button{
+  margin: 0.4rem;
+}
+ /*  adding new review*/
+/* .review-input-container {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background-color: #fff;  
+ padding: 1rem;
+} 
+.new-review {
+	max-width: 100%;
+} */
+
+
+
+ 

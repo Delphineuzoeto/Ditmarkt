@@ -1,14 +1,14 @@
 //  <!-- product category carousel section -->
 
  document.addEventListener( 'DOMContentLoaded', function () {
-  new Splide( '#image-carousel', {
+  new Splide( '#img-carousel', {
 		perPage    : 4,
 		breakpoints: {
 			575: {
-				perPage: 3,
+				perPage: 1,
 			},
 			767: {
-				perPage: 3,
+				perPage: 2,
 			},
 			991: {
 				perPage: 3,
@@ -21,7 +21,7 @@
 		perPage    : 4,
 		breakpoints: {
 			575: {
-				perPage: 3,
+				perPage: 2,
 			},
 			767: {
 				perPage: 3,
@@ -37,7 +37,7 @@
 		perPage    : 4,
 		breakpoints: {
 			575: {
-				perPage: 3,
+				perPage: 1,
 			},
 			767: {
 				perPage: 3,
@@ -57,12 +57,15 @@
 		perPage    : 6,
 		breakpoints: {
 			575: {
-				perPage: 2,
+				perPage: 1,
 			},
 			767: {
-				perPage: 3,
+				perPage: 2,
 			},
 			991: {
+				perPage: 3,
+			},
+			1024: {
 				perPage: 4,
 			},
 		},
